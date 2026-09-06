@@ -39,3 +39,4 @@ Como o projeto é 100% estático (sem dependência de Node.js, Astro ou npm), vo
 ---
 © 2026 Marinha do Brasil. Todos os direitos reservados.
 # site_app_marinha
+# site_app_marinha
