@@ -986,7 +986,13 @@
           <h2 id="watch-title">A Marinha.<br><em>No seu pulso.</em></h2>
           <p>Mais presença em cada movimento. Acompanhe suas atividades, cuide da hidratação e leve a Rádio Marinha com você.</p>
           <div class="watch-highlights"><span>Seu movimento.</span><span>Seu bem-estar.</span><span>Sua Marinha.</span></div>
-          <a class="button button-dark" href="https://apps.apple.com/app/marinha-do-brasil/id6763670491" target="_blank" rel="noopener noreferrer">Conheça na App Store <span aria-hidden="true">↗</span></a>
+          <div class="watch-actions">
+            <a class="button button-dark" href="https://apps.apple.com/app/marinha-do-brasil/id6763670491" target="_blank" rel="noopener noreferrer">Conheça na App Store <span aria-hidden="true">↗</span></a>
+            <a class="watch-link-anchor" href="#watch-integracao">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+              <span>Entenda a sincronização</span>
+            </a>
+          </div>
         </div>
         <div class="watch-showcase">
           <div class="watch-showcase-label"><span>FEITO PARA ACOMPANHAR VOCÊ</span><span>watchOS</span></div>
@@ -1003,6 +1009,83 @@
             <button type="button" data-watch-select="radio_1" aria-pressed="false"><span>Rádio Marinha</span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m9 5 7 7-7 7"/></svg></button>
           </div>
           <p class="watch-preview-note">Selecione um recurso e explore as telas do app.</p>
+        </div>
+
+        <!-- Bloco de Sincronização: iPhone e Apple Saúde -->
+        <div class="watch-ecosystem" id="watch-integracao">
+          <div class="watch-ecosystem-header">
+            <span class="eyebrow">CONEXÃO &amp; SAÚDE INTEGRADA</span>
+            <h3>Sincronização com iPhone e Apple Saúde</h3>
+            <p>Conectividade contínua entre seu relógio, celular e o ecossistema de saúde. Mais autonomia nos treinos e precisão em cada indicador.</p>
+          </div>
+          <div class="watch-ecosystem-grid">
+            <article class="watch-ecosystem-card">
+              <div class="watch-card-top">
+                <div class="watch-card-icon" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="3"/><path d="M12 18h.01"/><path d="m9 10 3-3 3 3"/><path d="M12 7v7"/></svg>
+                </div>
+                <span class="watch-card-tag">watchOS &amp; iOS</span>
+              </div>
+              <div class="watch-card-body">
+                <h4>Sincronização Automática</h4>
+                <p><strong>Treine sem levar o iPhone.</strong> O Apple Watch monitora corrida e ciclismo com GPS e sensores próprios. Ao reencontrar o celular, todo o percurso e dados são sincronizados em segundo plano via Bluetooth ou Wi-Fi.</p>
+              </div>
+            </article>
+
+            <article class="watch-ecosystem-card">
+              <div class="watch-card-top">
+                <div class="watch-card-icon watch-card-icon--health" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/><path d="M3.22 12H9.5l1.5-3 2 6 1.5-3h4.28"/></svg>
+                </div>
+                <span class="watch-card-tag">Apple Saúde (HealthKit)</span>
+              </div>
+              <div class="watch-card-body">
+                <h4>Treinos &amp; Círculos de Atividade</h4>
+                <p><strong>Feche seus anéis todos os dias.</strong> Suas corridas e pedaladas no aplicativo contam diretamente para as metas de Movimento e Exercício do Apple Watch. O sistema registra zonas de frequência cardíaca, calorias ativas, cadência e ritmo no HealthKit, unificando seu desempenho esportivo ao controle diário de hidratação.</p>
+              </div>
+            </article>
+
+            <article class="watch-ecosystem-card">
+              <div class="watch-card-top">
+                <div class="watch-card-icon watch-card-icon--shield" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
+                </div>
+                <span class="watch-card-tag">Privacidade &amp; Segurança</span>
+              </div>
+              <div class="watch-card-body">
+                <h4>Criptografia e Controle Total</h4>
+                <p><strong>Seus dados pertencem a você.</strong> Todas as informações de saúde são criptografadas no aparelho e no iCloud. Você tem controle granular para permitir ou revogar acessos a qualquer hora em <em>Ajustes &gt; Saúde</em>.</p>
+              </div>
+            </article>
+          </div>
+
+          <!-- Fluxo detalhado de sincronização dos treinos -->
+          <div class="watch-sync-flow" aria-label="Janela de sincronização com o Apple Saúde">
+            <div class="watch-flow-heading">
+              <span class="watch-flow-icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              </span>
+              <div class="watch-flow-heading-copy">
+                <strong>Sincronização inteligente na página de Esportes</strong>
+                <p>Entenda como os treinos do Apple Saúde são importados para o aplicativo da Marinha:</p>
+              </div>
+            </div>
+            <div class="watch-flow-grid">
+              <div class="watch-flow-item">
+                <span class="watch-flow-pill">Primeira ativação</span>
+                <h5>Histórico dos últimos 30 dias</h5>
+                <p>Ao entrar na aba de <strong>Esportes</strong> e ativar a sincronização com o Apple Saúde pela primeira vez, o aplicativo realiza uma leitura abrangente, importando automaticamente seus treinos realizados nos <strong>últimos 30 dias</strong>.</p>
+              </div>
+              <div class="watch-flow-arrow" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>
+              </div>
+              <div class="watch-flow-item">
+                <span class="watch-flow-pill watch-flow-pill--daily">Acessos seguintes</span>
+                <h5>Treinos das últimas 24 horas</h5>
+                <p>Nas próximas vezes em que você abrir a página de Esportes, o app realiza uma sincronização rápida e econômica: busca apenas as atividades físicas concluídas nas <strong>últimas 24 horas</strong>, mantendo seu painel atualizado sem lentidão.</p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 

@@ -4355,8 +4355,17 @@ html.high-contrast .intro-pillar-tag {
 .watch-copy > p { max-width: 39ch; color: #acb9ca; font-size: 1rem; line-height: 1.85; }
 .watch-highlights { display: grid; gap: 12px; margin: 32px 0 40px; color: #dce3ec; font-size: .85rem; }
 .watch-highlights span::before { content: ''; display: inline-block; width: 5px; height: 5px; border-radius: 50%; background: #e7c477; margin: 0 12px 2px 0; }
-.watch-copy > .button { background: #f4f7fb; color: #081321; border-radius: 12px; }
-.watch-copy > .button:hover { background: #e7c477; }
+.watch-copy .button { background: #f4f7fb; color: #081321; border-radius: 12px; }
+.watch-copy .button:hover { background: #e7c477; }
+.watch-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 20px; }
+.watch-link-anchor {
+  display: inline-flex; align-items: center; gap: 8px;
+  color: #c3cdd9; font-size: .85rem; font-weight: 500; text-decoration: none;
+  transition: color .2s, transform .2s;
+}
+.watch-link-anchor svg { color: #e7c477; transition: transform .2s; }
+.watch-link-anchor:hover { color: #e7c477; transform: translateY(2px); }
+.watch-link-anchor:hover svg { transform: translateY(2px); }
 .watch-showcase { min-width: 0; display: grid; justify-items: center; gap: 24px; padding: 24px 0 0; }
 .watch-showcase-label { display: flex; justify-content: space-between; align-items: center; width: 100%; padding-bottom: 24px; border-bottom: 1px solid #ffffff18; color: #a7b6c8; font-size: .55rem; letter-spacing: .15em; }
 .watch-showcase-label span:last-child { font-size: .7rem; letter-spacing: 0; }
@@ -4371,11 +4380,229 @@ html.high-contrast .intro-pillar-tag {
 .watch-choices button svg { display: none; }
 .watch-choices button:hover { background: #ffffff0d; color: #fff; }
 .watch-choices button[aria-pressed="true"] { background: #e7c477; color: #081321; }
-.watch-choices button:focus-visible, .watch-copy > .button:focus-visible { outline: 2px solid #e7c477; outline-offset: 4px; }
+.watch-choices button:focus-visible, .watch-copy .button:focus-visible, .watch-link-anchor:focus-visible { outline: 2px solid #e7c477; outline-offset: 4px; }
 .watch-preview-note { margin: -12px 0 0; font-size: .6rem; color: #9babc0; text-align: center; }
+
+/* Ecossistema e Sincronização: iPhone e Apple Saúde */
+.watch-ecosystem {
+  grid-column: 1 / -1;
+  width: 100%;
+  margin-top: 36px;
+  padding-top: 48px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  scroll-margin-top: calc(var(--header-height, 72px) + 24px);
+}
+.watch-ecosystem-header {
+  max-width: 680px;
+  margin-bottom: 32px;
+}
+.watch-ecosystem-header .eyebrow {
+  color: #c3cdd9; font-size: .65rem; letter-spacing: .18em;
+  display: inline-flex; align-items: center; gap: 8px;
+}
+.watch-ecosystem-header .eyebrow::before {
+  content: ''; display: inline-block; width: 14px; height: 2px; background: #e7c477;
+}
+.watch-ecosystem-header h3 {
+  margin: 14px 0 10px;
+  font-family: inherit; font-weight: 600; font-size: clamp(1.5rem, 2.5vw, 2.2rem);
+  line-height: 1.2; letter-spacing: -.03em; color: #f4f7fb;
+}
+.watch-ecosystem-header p {
+  color: #acb9ca; font-size: .95rem; line-height: 1.7; margin: 0;
+}
+.watch-ecosystem-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+.watch-ecosystem-card {
+  position: relative;
+  background: rgba(9, 22, 36, 0.65);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  padding: 26px 22px;
+  display: flex;
+  flex-direction: column;
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  transition: transform .25s ease, border-color .25s ease, box-shadow .25s ease, background .25s ease;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.25);
+}
+.watch-ecosystem-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(231, 196, 119, 0.4);
+  background: rgba(14, 30, 48, 0.85);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.35), 0 0 24px rgba(79, 175, 196, 0.12);
+}
+.watch-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.watch-card-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, rgba(79, 175, 196, 0.2), rgba(79, 175, 196, 0.05));
+  border: 1px solid rgba(79, 175, 196, 0.3);
+  color: #7de3ec;
+}
+.watch-card-icon--health {
+  background: linear-gradient(135deg, rgba(255, 89, 105, 0.2), rgba(255, 89, 105, 0.05));
+  border-color: rgba(255, 89, 105, 0.3);
+  color: #ff6b7d;
+}
+.watch-card-icon--shield {
+  background: linear-gradient(135deg, rgba(231, 196, 119, 0.2), rgba(231, 196, 119, 0.05));
+  border-color: rgba(231, 196, 119, 0.3);
+  color: #e7c477;
+}
+.watch-card-tag {
+  font-size: .65rem;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: #c3cdd9;
+}
+.watch-card-body h4 {
+  margin: 0 0 10px;
+  font-family: inherit;
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #f4f7fb;
+  letter-spacing: -.01em;
+}
+.watch-card-body p {
+  margin: 0;
+  font-size: .88rem;
+  line-height: 1.65;
+  color: #acb9ca;
+}
+.watch-card-body strong {
+  color: #f4f7fb;
+  font-weight: 600;
+}
+
+/* Fluxo detalhado de sincronização de treinos (30 dias vs 24 horas) */
+.watch-sync-flow {
+  margin-top: 28px;
+  padding: 26px 28px;
+  border-radius: 20px;
+  background: linear-gradient(135deg, rgba(14, 28, 46, 0.75), rgba(8, 19, 33, 0.85));
+  border: 1px solid rgba(231, 196, 119, 0.25);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.28), inset 0 1px 0 rgba(255, 255, 255, 0.06);
+}
+.watch-flow-heading {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  margin-bottom: 22px;
+}
+.watch-flow-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, rgba(231, 196, 119, 0.22), rgba(231, 196, 119, 0.06));
+  border: 1px solid rgba(231, 196, 119, 0.35);
+  color: #e7c477;
+  flex-shrink: 0;
+}
+.watch-flow-heading-copy strong {
+  display: block;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #f4f7fb;
+  margin-bottom: 4px;
+}
+.watch-flow-heading-copy p {
+  margin: 0;
+  font-size: .85rem;
+  color: #acb9ca;
+}
+.watch-flow-grid {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  gap: 22px;
+}
+.watch-flow-item {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 16px;
+  padding: 20px 18px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  transition: transform .2s ease, border-color .2s ease;
+}
+.watch-flow-item:hover {
+  border-color: rgba(231, 196, 119, 0.3);
+  transform: translateY(-2px);
+}
+.watch-flow-pill {
+  align-self: flex-start;
+  font-size: .68rem;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: rgba(231, 196, 119, 0.15);
+  border: 1px solid rgba(231, 196, 119, 0.3);
+  color: #e7c477;
+  margin-bottom: 12px;
+}
+.watch-flow-pill--daily {
+  background: rgba(79, 175, 196, 0.15);
+  border-color: rgba(79, 175, 196, 0.3);
+  color: #7de3ec;
+}
+.watch-flow-item h5 {
+  margin: 0 0 10px;
+  font-family: inherit;
+  font-size: 1.02rem;
+  font-weight: 600;
+  color: #f4f7fb;
+}
+.watch-flow-item p {
+  margin: 0;
+  font-size: .85rem;
+  line-height: 1.65;
+  color: #acb9ca;
+}
+.watch-flow-item strong {
+  color: #f4f7fb;
+  font-weight: 600;
+}
+.watch-flow-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #e7c477;
+  opacity: .8;
+}
 @media (max-width: 900px) {
   .watch-section.shell { gap: 32px; }
   .watch-choices button { padding-inline: 9px; }
+  .watch-ecosystem-grid { grid-template-columns: 1fr; gap: 16px; }
+  .watch-ecosystem { margin-top: 24px; padding-top: 36px; }
+  .watch-flow-grid { grid-template-columns: 1fr; gap: 14px; }
+  .watch-flow-arrow { transform: rotate(90deg); padding: 4px 0; }
+  .watch-sync-flow { padding: 20px 18px; }
 }
 @media (max-width: 760px) {
   .watch-section.shell { grid-template-columns: minmax(0,1fr); padding: 48px 24px; gap: 40px; }
