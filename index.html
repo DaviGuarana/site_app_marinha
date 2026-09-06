@@ -1,0 +1,1392 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="no-js">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#050b2d" />
+    <meta name="color-scheme" content="light dark" />
+    <title>Aplicativo Marinha do Brasil</title>
+    <meta name="description" content="O aplicativo oficial da Marinha do Brasil reúne notícias, serviços, concursos, Rádio Marinha, cultura naval e qualidade de vida para iOS e Android." />
+    <link rel="canonical" href="https://www.marinha.mil.br/app/" />
+    
+    <!-- Open Graph / Redes Sociais -->
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:site_name" content="Aplicativo Marinha do Brasil" />
+    <meta property="og:title" content="Aplicativo Marinha do Brasil" />
+    <meta property="og:description" content="O aplicativo oficial da Marinha do Brasil reúne notícias, serviços, concursos, Rádio Marinha, cultura naval e qualidade de vida para iOS e Android." />
+    <meta property="og:url" content="https://www.marinha.mil.br/app/" />
+    <meta property="og:image" content="https://www.marinha.mil.br/app/assets/images/hero-marinha.webp" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="apple-itunes-app" content="app-id=6763670491" />
+    
+    <!-- Favicon e Fontes -->
+    <link rel="icon" type="image/jpeg" href="assets/images/app-icon.jpg" />
+    <link rel="preload" href="assets/fonts/octin-college-bold.ttf" as="font" type="font/ttf" crossorigin />
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/home.css" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Aplicativo Marinha do Brasil",
+        "applicationCategory": "LifestyleApplication",
+        "operatingSystem": "iOS, Android",
+        "description": "Notícias, serviços, concursos, cultura, Rádio Marinha e qualidade de vida em um só aplicativo oficial.",
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "BRL" },
+        "downloadUrl": [
+          "https://apps.apple.com/app/marinha-do-brasil/id6763670491",
+          "https://play.google.com/store/apps/details?id=br.gov.marinhaoficial.app"
+        ],
+        "publisher": {
+          "@type": "GovernmentOrganization",
+          "name": "Marinha do Brasil",
+          "url": "https://www.marinha.mil.br/"
+        }
+      }
+    </script>
+  </head>
+  <body class="home-page">
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+    <!-- Barra de Acessibilidade (Padrão e-MAG) -->
+    <aside class="accessibility-bar" aria-label="Barra de acessibilidade">
+      <div class="shell accessibility-shell">
+        <ul class="accessibility-shortcuts" aria-label="Atalhos para as principais áreas da página">
+          <li>
+            <a href="#conteudo" accesskey="1">
+              <span class="a11y-key">Alt + 1</span> Ir para o conteúdo
+            </a>
+          </li>
+          <li>
+            <a href="#menu-principal" accesskey="2">
+              <span class="a11y-key">Alt + 2</span> Ir para o menu
+            </a>
+          </li>
+          <li>
+            <a href="#rodape" accesskey="3">
+              <span class="a11y-key">Alt + 3</span> Ir para o rodapé
+            </a>
+          </li>
+        </ul>
+
+        <button class="a11y-panel-toggle" type="button" aria-expanded="false" aria-controls="accessibility-tools" data-a11y-panel-toggle>
+          <span>Acessibilidade</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+        </button>
+        <div class="accessibility-tools" id="accessibility-tools" aria-label="Ferramentas de acessibilidade">
+          <a href="acessibilidade.html" class="a11y-link">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
+            <span>Acessibilidade</span>
+          </a>
+
+          <button type="button" class="a11y-btn" data-a11y-contrast aria-pressed="false" title="Alternar modo de alto contraste">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 2a10 10 0 0 1 0 20Z" fill="currentColor"/></svg>
+            <span>Alto Contraste</span>
+          </button>
+
+          <button type="button" class="a11y-btn" data-a11y-vlibras title="Ativar tradutor de Libras (VLibras)" aria-label="Ativar tradutor de Língua Brasileira de Sinais">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 11V6a2 2 0 0 0-2-2v0a2 2 0 0 0-2 2v0"/><path d="M14 10V4a2 2 0 0 0-2-2v0a2 2 0 0 0-2 2v2"/><path d="M10 10.5V6a2 2 0 0 0-2-2v0a2 2 0 0 0-2 2v8"/><path d="M18 8a2 2 0 1 1 4 0v6a8 8 0 0 1-8 8h-2c-2.8 0-4.5-.86-5.99-2.34l-3.6-3.6a2 2 0 0 1 2.83-2.82L7 15"/></svg>
+            <span>Libras</span>
+          </button>
+
+          <div class="a11y-font-controls" role="group" aria-label="Controle do tamanho da fonte">
+            <button type="button" class="a11y-btn a11y-btn--sm" data-a11y-font="decrease" title="Diminuir o tamanho do texto" aria-label="Diminuir o tamanho do texto">
+              A-
+            </button>
+            <button type="button" class="a11y-btn a11y-btn--sm" data-a11y-font="reset" title="Restaurar tamanho padrão do texto" aria-label="Restaurar tamanho padrão do texto">
+              A
+            </button>
+            <button type="button" class="a11y-btn a11y-btn--sm" data-a11y-font="increase" title="Aumentar o tamanho do texto" aria-label="Aumentar o tamanho do texto">
+              A+
+            </button>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Progresso de rolagem -->
+    <div class="scroll-progress" aria-hidden="true"><span data-scroll-progress></span></div>
+
+    <!-- Header Principal -->
+    <header class="site-header" data-site-header>
+      <div class="header-shell">
+        <a class="brand" href="index.html" aria-label="Aplicativo Marinha do Brasil — página inicial">
+          <img src="assets/images/logo-marinha-branca.webp" width="52" height="52" alt="Brasão da Marinha do Brasil" />
+          <span class="brand-copy">
+            <strong>MARINHA</strong>
+            <small>DO BRASIL</small>
+          </span>
+          <span class="brand-product">Aplicativo oficial</span>
+        </a>
+
+        <nav id="menu-principal" class="desktop-nav" aria-label="Navegação principal">
+          <a href="#servicos">Serviços</a>
+          <a href="#qualidade-vida">Qualidade de vida</a>
+          <a href="#apple-watch">Apple Watch</a>
+          <a href="#noticias">Notícias</a>
+
+          <div class="nav-dropdown" data-nav-dropdown>
+            <button
+              type="button"
+              class="nav-dropdown-trigger"
+              aria-expanded="false"
+              aria-haspopup="true"
+              id="dropdown-mais-btn"
+            >
+              <span>Mais</span>
+              <svg class="dropdown-chevron" xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+            </button>
+
+            <div class="nav-dropdown-menu" role="menu" aria-labelledby="dropdown-mais-btn">
+
+              <a href="#recursos" class="dropdown-item" role="menuitem">
+                <span class="dropdown-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
+                </span>
+                <span class="dropdown-text">
+                  <strong>Recursos</strong>
+                  <small>Explore o aplicativo</small>
+                </span>
+              </a>
+
+              <a href="#radio" class="dropdown-item" role="menuitem">
+                <span class="dropdown-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.9 19.1C1 15.2 1 8.8 4.9 4.9"/><path d="M7.8 16.2c-2.3-2.3-2.3-6.1 0-8.5"/><circle cx="12" cy="12" r="2"/><path d="M16.2 7.8c2.3 2.3 2.3 6.1 0 8.5"/><path d="M19.1 4.9C23 8.8 23 15.1 19.1 19"/></svg>
+                </span>
+                <span class="dropdown-text">
+                  <strong>Rádio Marinha</strong>
+                  <small>Ao vivo 24 horas</small>
+                </span>
+              </a>
+
+              <a href="#cultura" class="dropdown-item" role="menuitem">
+                <span class="dropdown-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/></svg>
+                </span>
+                <span class="dropdown-text">
+                  <strong>Cultura & Tradição</strong>
+                  <small>Patrimônio naval</small>
+                </span>
+              </a>
+
+              <div class="dropdown-divider"></div>
+
+              <a href="suporte.html" class="dropdown-item" role="menuitem">
+                <span class="dropdown-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg>
+                </span>
+                <span class="dropdown-text">
+                  <strong>Suporte e Ajuda</strong>
+                  <small>Atendimento e dúvidas</small>
+                </span>
+              </a>
+            </div>
+          </div>
+        </nav>
+
+        <div class="header-actions">
+          <a class="header-download" aria-label="Baixar o aplicativo" href="#download">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg>
+            <span>Baixar o app</span>
+          </a>
+          <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" data-menu-toggle>
+            <span class="sr-only">Abrir menu</span>
+            <span data-menu-open>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h16"/><path d="M4 12h16"/><path d="M4 17h16"/></svg>
+            </span>
+            <span data-menu-close hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 6l12 12"/><path d="M18 6 6 18"/></svg>
+            </span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Menu Mobile -->
+      <div class="mobile-menu" id="mobile-menu" data-mobile-menu hidden>
+        <nav aria-label="Navegação móvel">
+          <a href="#servicos" style="--menu-index: 0"><span>01</span>Serviços <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg></a>
+          <a href="#qualidade-vida" style="--menu-index: 1"><span>02</span>Qualidade de vida <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg></a>
+          <a href="#apple-watch" style="--menu-index: 2"><span>03</span>Apple Watch <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg></a>
+          <a href="#noticias" style="--menu-index: 3"><span>04</span>Notícias <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg></a>
+          <a href="#radio" style="--menu-index: 4"><span>05</span>Rádio <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg></a>
+          <a href="#cultura" style="--menu-index: 5"><span>06</span>Cultura & Tradição <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg></a>
+          <a href="suporte.html" style="--menu-index: 6"><span>07</span>Suporte e Ajuda <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg></a>
+          <a href="privacidade.html" style="--menu-index: 7"><span>08</span>Privacidade <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg></a>
+          <a href="acessibilidade.html" style="--menu-index: 8"><span>09</span>Acessibilidade <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg></a>
+        </nav>
+        <div class="mobile-menu-footer">
+          <a href="#download" class="button button-primary">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg>
+            Baixar agora
+          </a>
+          <a href="https://www.marinha.mil.br/ouvidoria" target="_blank" rel="noopener noreferrer">
+            Ouvidoria
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main id="conteudo">
+      <!-- Hero Section -->
+      <section class="home-hero" aria-labelledby="hero-title">
+        <div class="hero-media" data-parallax data-speed="0.045">
+          <img
+            src="assets/images/hero-marinha.webp"
+            width="2400"
+            height="1064"
+            alt="Militar da Marinha observando uma área portuária enquanto usa o aplicativo no celular"
+            fetchpriority="high"
+          />
+        </div>
+        <div class="hero-overlay" aria-hidden="true"></div>
+        <div class="hero-grid" aria-hidden="true"></div>
+        <div class="shell hero-content">
+          <div class="hero-copy">
+            <span class="official-badge" data-hero-animate>
+              <img src="assets/images/app-icon.jpg" width="34" height="34" alt="" />
+              Aplicativo oficial
+            </span>
+            <h1 id="hero-title" data-hero-animate>A Marinha do Brasil <em>na palma da sua mão.</em></h1>
+            <p data-hero-animate>Informação confiável, serviços, oportunidades, cultura e qualidade de vida reunidos em uma experiência feita para acompanhar você.</p>
+            <div class="hero-actions" data-hero-animate>
+              <a class="button button-primary" href="#download">
+                Baixar gratuitamente
+                <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg>
+              </a>
+              <a class="button button-outline" href="#demo">
+                Ver o app em ação
+                <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="hero-phone-wrap hero-showcase" aria-label="Explore as telas do aplicativo">
+            <div class="showcase-stage" role="tablist" aria-label="Telas em destaque do aplicativo">
+              <div class="hero-device-wrap" data-hero-animate>
+                <div class="hero-device">
+                  <span class="device-chassis" aria-hidden="true"></span>
+                  <span class="device-key device-key-action" aria-hidden="true"></span>
+                  <span class="device-key device-key-volume" aria-hidden="true"></span>
+                  <span class="device-key device-key-volume-down" aria-hidden="true"></span>
+                  <span class="device-key device-key-power" aria-hidden="true"></span>
+                  <div class="phone phone-hero" id="hero-preview" role="tabpanel" aria-labelledby="hero-tab-home" tabindex="0">
+                    <span class="phone-speaker" aria-hidden="true"></span>
+                    <img src="assets/images/app-home-atual.webp" width="1170" height="2532" alt="Tela inicial do aplicativo Marinha do Brasil" data-hero-screen />
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card Flutuante: Início -->
+              <button class="floating-card card-home showcase-card" type="button" id="hero-tab-home" role="tab" aria-selected="true" aria-controls="hero-preview" data-hero-tab="home" aria-label="Explorar o Início do aplicativo" data-hero-animate>
+                <span class="glass-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 10 9-7 9 7v10a1 1 0 0 1-1 1h-5v-7H9v7H4a1 1 0 0 1-1-1Z"/></svg></span>
+                <span class="glass-copy"><strong>Início</strong><span class="glass-action">Tudo começa aqui <svg class="glass-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></span></span>
+              </button>
+
+              <!-- Card Flutuante: Concursos -->
+              <button class="floating-card card-jobs showcase-card" type="button" id="hero-tab-jobs" role="tab" aria-selected="false" aria-controls="hero-preview" tabindex="-1" data-hero-tab="jobs" aria-label="Explorar os Concursos da Marinha" data-hero-animate>
+                <span class="glass-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4" width="16" height="17" rx="2"/><path d="M8 2v4m8-4v4M8 11h8m-8 4h5"/></svg></span>
+                <span class="glass-copy"><strong>Concursos</strong><span class="glass-action">Editais e vagas <svg class="glass-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></span></span>
+              </button>
+
+              <!-- Card Flutuante: Busca inteligente -->
+              <button class="floating-card card-search card-weather showcase-card" type="button" id="hero-tab-search" role="tab" aria-selected="false" aria-controls="hero-preview" tabindex="-1" data-hero-tab="search" aria-label="Explorar a busca do aplicativo" data-hero-animate>
+                <span class="glass-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 4.5 4.5"/></svg></span>
+                <span class="glass-copy"><strong>Busca inteligente</strong><span class="glass-action">Encontre um serviço <svg class="glass-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></span></span>
+              </button>
+
+              <!-- Card Flutuante: Rádio Marinha -->
+              <button class="floating-card card-radio showcase-card" type="button" id="hero-tab-radio" role="tab" aria-selected="false" aria-controls="hero-preview" tabindex="-1" data-hero-tab="radio" aria-label="Explorar a Rádio Marinha" data-hero-animate>
+                <span class="glass-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="8" width="18" height="13" rx="3"/><path d="m7 8 10-5"/><circle cx="8" cy="14.5" r="2"/><path d="M14 13h3m-3 4h3"/></svg></span>
+                <span class="glass-copy"><strong>Rádio Marinha</strong><span class="glass-action">Conheça o player <svg class="glass-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></span></span>
+              </button>
+            </div>
+            <div class="sr-only" aria-live="polite">
+              <span data-hero-label>Tudo começa aqui.</span>
+              <span data-hero-description>O essencial do seu dia, em uma só tela.</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero-foot shell" data-hero-animate>
+          <div><strong>01</strong><span>Informação oficial</span></div>
+          <div><strong>02</strong><span>Serviços e oportunidades</span></div>
+          <div><strong>03</strong><span>Saúde e movimento</span></div>
+          <a href="#experiencia">Role para descobrir <span aria-hidden="true">↓</span></a>
+        </div>
+      </section>
+
+      <!-- Experiência Integrada -->
+      <section class="intro-section shell" id="experiencia">
+        <div class="intro-kicker" data-reveal>
+          <span class="eyebrow">Uma experiência integrada</span>
+          <span class="section-number">01 / 07</span>
+        </div>
+        <div class="intro-grid">
+          <h2 data-reveal="scale">Mais que um aplicativo. <em>Um novo ponto de contato com a Marinha.</em></h2>
+          <div data-reveal style="--reveal-delay: 150ms">
+            <p>Encontre o que importa sem navegar por caminhos complicados. A Home se adapta aos seus acessos, a busca entende siglas e expressões do dia a dia, e os principais recursos permanecem sempre por perto.</p>
+            <a class="text-link" href="#recursos">
+              Explorar todos os recursos
+              <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Pilares da Experiência Integrada -->
+        <div class="intro-pillars" data-reveal style="--reveal-delay: 220ms">
+          <div class="intro-pillar-card">
+            <div class="intro-pillar-header">
+              <span class="intro-pillar-num">01</span>
+              <span class="intro-pillar-icon" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="5" r="3"/><path d="M12 22V8M5 12H2a10 10 0 0 0 20 0h-3"/></svg>
+              </span>
+            </div>
+            <h3>Serviços &amp; Capitanias</h3>
+            <p>Acesso rápido à emissão de documentos, habilitação de amadores (CHA), vistorias náuticas e agendamento direto com Capitanias e Delegacias.</p>
+            <span class="intro-pillar-tag">Capitanias &amp; Delegacias</span>
+          </div>
+
+          <div class="intro-pillar-card">
+            <div class="intro-pillar-header">
+              <span class="intro-pillar-num">02</span>
+              <span class="intro-pillar-icon intro-pillar-icon--blue" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6M8 11h6"/></svg>
+              </span>
+            </div>
+            <h3>Busca Inteligente</h3>
+            <p>Compreensão avançada de siglas militares, termos náuticos e linguagem do dia a dia para encontrar respostas e serviços de forma instantânea.</p>
+            <span class="intro-pillar-tag">Pesquisa Semântica</span>
+          </div>
+
+          <div class="intro-pillar-card">
+            <div class="intro-pillar-header">
+              <span class="intro-pillar-num">03</span>
+              <span class="intro-pillar-icon intro-pillar-icon--gold" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4.9 19.1C1 15.2 1 8.8 4.9 4.9"/><path d="M7.8 16.2c-2.3-2.3-2.3-6.1 0-8.5"/><circle cx="12" cy="12" r="2"/><path d="M16.2 7.8c2.3 2.3 2.3 6.1 0 8.5"/><path d="M19.1 4.9C23 8.8 23 15.1 19.1 19"/></svg>
+              </span>
+            </div>
+            <h3>Rádio &amp; Cultura Naval</h3>
+            <p>Transmissão contínua da Rádio Marinha 24 horas, notícias em tempo real da Agência e acervo histórico de visitação e passeios culturais.</p>
+            <span class="intro-pillar-tag">Mídia &amp; Tradição</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Demonstração do aplicativo -->
+      <section class="demo-section" id="demo" aria-labelledby="demo-title">
+        <div class="shell demo-shell">
+          <div class="demo-copy" data-reveal>
+            <span class="eyebrow">Veja antes de baixar</span>
+            <h2 id="demo-title">O essencial, sempre por perto.</h2>
+            <p>Conheça algumas das experiências disponíveis no aplicativo oficial.</p>
+            <div class="demo-tabs" role="tablist" aria-label="Telas do aplicativo">
+              <button type="button" role="tab" aria-selected="true" aria-controls="demo-panel" id="demo-tab-search" data-demo-tab data-image="assets/images/app-busca-cha.webp" data-alt="Busca do aplicativo mostrando resultados para CHA" data-label="Busca inteligente" data-description="Digite uma sigla ou expressão do dia a dia e encontre serviços e organizações relacionados.">Busca</button>
+              <button type="button" role="tab" aria-selected="false" aria-controls="demo-panel" id="demo-tab-service" tabindex="-1" data-demo-tab data-image="assets/images/app-detalhe-cha.webp" data-alt="Orientações do serviço Carteira de Habilitação de Amador no aplicativo" data-label="Serviços oficiais" data-description="Consulte documentos necessários e o passo a passo para acessar cada serviço.">Serviços</button>
+              <button type="button" role="tab" aria-selected="false" aria-controls="demo-panel" id="demo-tab-jobs" tabindex="-1" data-demo-tab data-image="assets/images/app-concursos.webp" data-alt="Tela de concursos da Marinha no aplicativo" data-label="Concursos" data-description="Acompanhe editais e oportunidades organizados por situação e escolaridade.">Concursos</button>
+              <button type="button" role="tab" aria-selected="false" aria-controls="demo-panel" id="demo-tab-news" tabindex="-1" data-demo-tab data-image="assets/images/app-noticias.webp" data-alt="Tela da Agência Marinha de Notícias no aplicativo" data-label="Notícias" data-description="Leia conteúdos oficiais da Agência Marinha de Notícias por tema.">Notícias</button>
+            </div>
+            <div class="demo-detail" aria-live="polite">
+              <strong data-demo-label>Busca inteligente</strong>
+              <p data-demo-description>Digite uma sigla ou expressão do dia a dia e encontre serviços e organizações relacionados.</p>
+            </div>
+            <a class="button button-dark" href="#download">Baixar o aplicativo</a>
+          </div>
+          <div class="demo-device" id="demo-panel" role="tabpanel" aria-labelledby="demo-tab-search" data-reveal>
+            <div class="phone demo-phone">
+              <span class="phone-speaker" aria-hidden="true"></span>
+              <img src="assets/images/app-busca-cha.webp" width="1242" height="2688" alt="Busca do aplicativo mostrando resultados para CHA" loading="lazy" data-demo-image />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Recursos e Destaques -->
+      <section class="features-section" id="recursos">
+        <div class="shell">
+          <div class="section-heading" data-reveal>
+            <div>
+              <span class="eyebrow">Tudo em um só lugar</span>
+              <h2>Seu acesso rápido à Marinha.</h2>
+            </div>
+            <p>Uma interface moderna para conteúdo institucional, serviços úteis e recursos que acompanham sua rotina.</p>
+          </div>
+          <div class="feature-grid">
+            <a class="feature-card feature-blue feature-large" href="#demo" data-open-demo="demo-tab-news" aria-label="Ver a tela de Notícias da Marinha" data-reveal>
+              <span class="feature-index">01</span>
+              <span class="feature-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h13v16H4z"/><path d="M8 8h5"/><path d="M8 12h5"/><path d="M8 16h3"/><path d="M17 8h3v10a2 2 0 0 1-2 2h-1"/></svg>
+              </span>
+              <span class="feature-copy">
+                <small>Informação oficial</small>
+                <strong>Notícias da Marinha</strong>
+                <span>Acompanhe os destaques da Agência Marinha de Notícias diretamente na tela inicial.</span>
+              </span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
+            </a>
+
+            <a class="feature-card feature-gold" href="#demo" data-open-demo="demo-tab-jobs" aria-label="Ver a tela de concursos e editais" data-reveal>
+              <span class="feature-index">02</span>
+              <span class="feature-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m2 10 10-6 10 6-10 6L2 10Z"/><path d="M6 12v5c3 2 9 2 12 0v-5"/><path d="M22 10v6"/></svg>
+              </span>
+              <span class="feature-copy">
+                <small>Oportunidades</small>
+                <strong>Concursos e editais</strong>
+                <span>Consulte processos seletivos por nível de escolaridade e acompanhe seus editais.</span>
+              </span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
+            </a>
+
+            <a class="feature-card feature-green" href="#servicos" data-reveal>
+              <span class="feature-index">03</span>
+              <span class="feature-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22V8"/><path d="M5 12H2a10 10 0 0 0 20 0h-3"/><path d="M8 5a4 4 0 1 0 8 0 4 4 0 0 0-8 0Z"/></svg>
+              </span>
+              <span class="feature-copy">
+                <small>Perto de você</small>
+                <strong>Serviços e Capitanias</strong>
+                <span>Encontre unidades e acesse serviços como CHA, TIE/TIEM e atendimento a aquaviários.</span>
+              </span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
+            </a>
+
+            <a class="feature-card feature-coral" href="#radio" data-reveal>
+              <span class="feature-index">04</span>
+              <span class="feature-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14a2 2 0 0 1 2 2v9H3v-9a2 2 0 0 1 2-2Z"/><path d="m7 8 8-5"/><path d="M7 14h.01"/><path d="M11 14h6"/><path d="M11 17h4"/></svg>
+              </span>
+              <span class="feature-copy">
+                <small>Ao vivo</small>
+                <strong>Rádio Marinha</strong>
+                <span>Ouça a programação e acompanhe o que está tocando.</span>
+              </span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
+            </a>
+
+            <a class="feature-card feature-cyan" href="#qualidade-vida" data-reveal>
+              <span class="feature-index">05</span>
+              <span class="feature-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6a5.5 5.5 0 0 0 1-8.8Z"/></svg>
+              </span>
+              <span class="feature-copy">
+                <small>Bem-estar</small>
+                <strong>Qualidade de vida</strong>
+                <span>Acompanhe hidratação, atividades físicas, metas e evolução.</span>
+              </span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
+            </a>
+
+            <a class="feature-card feature-violet" href="#cultura" data-reveal>
+              <span class="feature-index">06</span>
+              <span class="feature-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10h18"/><path d="M5 10v8"/><path d="M9 10v8"/><path d="M15 10v8"/><path d="M19 10v8"/><path d="M2 21h20"/><path d="m12 3 9 5H3l9-5Z"/></svg>
+              </span>
+              <span class="feature-copy">
+                <small>Cultura e Patrimônio</small>
+                <strong>Marinha Cultural</strong>
+                <span>Museus, passeios, história naval, meios navais, hinos, canções e organizações militares.</span>
+              </span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Busca Inteligente / Serviços -->
+      <section class="smart-section shell" id="servicos" aria-labelledby="smart-title">
+        <div class="smart-visual" data-reveal="slide-left">
+          <div class="smart-visual-heading"><span>POR DENTRO DO APP</span><span class="smart-preview-label">Prévia interativa</span></div>
+
+          <!-- Mockup Fiel do iPhone 15 com as Telas Reais do App -->
+          <div class="iphone15-device" aria-label="Demonstração ilustrativa da busca no aplicativo Marinha do Brasil">
+            <!-- Botões físicos externos do iPhone 15 -->
+            <span class="iphone15-btn-silent" aria-hidden="true"></span>
+            <span class="iphone15-btn-volup" aria-hidden="true"></span>
+            <span class="iphone15-btn-voldown" aria-hidden="true"></span>
+            <span class="iphone15-btn-power" aria-hidden="true"></span>
+
+            <!-- Moldura do iPhone 15 -->
+            <div class="iphone15-bezel">
+              <!-- Dynamic Island -->
+              <div class="iphone15-island" aria-hidden="true">
+                <span class="iphone15-camera"></span>
+                <span class="iphone15-sensor"></span>
+              </div>
+
+              <!-- Tela do iPhone 15 (Fiel aos prints reais do aplicativo) -->
+              <div class="iphone15-screen" id="iphone-screen">
+                <!-- Status Bar do iOS -->
+                <div class="iphone15-status-bar" aria-hidden="true">
+                  <div class="iphone15-status-left">
+                    <span class="iphone15-time">18:26</span>
+                    <svg class="iphone15-location-icon" width="11" height="11" viewBox="0 0 24 24" fill="currentColor"><polygon points="3 11 22 2 13 21 11 13 3 11"/></svg>
+                  </div>
+                  <div class="iphone15-status-right">
+                    <span class="iphone15-carrier">4G</span>
+                    <svg class="iphone15-signal-icon" width="16" height="11" viewBox="0 0 17 12" fill="currentColor">
+                      <rect x="0" y="8" width="3" height="4" rx="0.5"/>
+                      <rect x="4.5" y="5.5" width="3" height="6.5" rx="0.5"/>
+                      <rect x="9" y="3" width="3" height="9" rx="0.5"/>
+                      <rect x="13.5" y="0" width="3" height="12" rx="0.5"/>
+                    </svg>
+                    <div class="iphone15-battery">
+                      <span class="iphone15-battery-pct">45</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Topo Oficial do App: Brasão oficial + MARINHA DO BRASIL + Menu -->
+                <div class="app-nav-header">
+                  <div class="app-brand-lockup">
+                    <img src="assets/images/logo-marinha.webp" width="34" height="34" alt="Brasão da Marinha do Brasil" />
+                    <div class="app-brand-titles">
+                      <strong>MARINHA</strong>
+                      <span>DO BRASIL</span>
+                    </div>
+                  </div>
+                  <button type="button" class="app-hamburger-btn" aria-label="Menu do aplicativo">
+                    <span></span><span></span><span></span>
+                  </button>
+                </div>
+
+                <!-- Barra de Pesquisa Oficial do App (Borda amarela vibrante) -->
+                <div class="app-search-container">
+                  <div class="app-search-input-wrap is-active" id="app-search-wrap">
+                    <svg class="app-search-glass" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                      <circle cx="11" cy="11" r="8"></circle>
+                      <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
+                    <div class="app-search-field">
+                      <span class="app-search-text" id="app-search-query">cha</span>
+                      <span class="app-search-caret" id="app-search-caret"></span>
+                    </div>
+                    <button type="button" class="app-search-clear-badge" id="app-search-clear-btn" aria-label="Limpar pesquisa">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+                    </button>
+                  </div>
+                </div>
+
+                <!-- Lista de Resultados Oficial -->
+                <div class="app-results-section">
+                  <div class="app-results-header">RESULTADOS</div>
+                  <div class="app-results-card">
+                    <!-- Item 1: CHA (com clique interativo para ver o BottomSheet) -->
+                    <div class="app-result-row is-interactive-target" id="app-cha-result" tabindex="0" role="button" aria-label="Abrir detalhes da Carteira de Habilitação de Amador">
+                      <div class="app-result-icon bg-purple">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                          <rect x="3" y="4" width="18" height="16" rx="3"/>
+                          <circle cx="12" cy="10" r="3"/>
+                          <path d="M7 17h10"/>
+                          <path d="M10 4V2h4v2"/>
+                        </svg>
+                      </div>
+                      <div class="app-result-content">
+                        <strong class="app-result-title">Carteira de Habilitação de Amador <span class="app-highlight-cha">(CHA)</span></strong>
+                        <span class="app-result-sub">Capitanias • habilitação para esporte e recreio</span>
+                      </div>
+                      <svg class="app-result-chevron" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+                      <span class="app-tap-indicator" id="app-tap-indicator"></span>
+                    </div>
+
+                    <!-- Item 2: 4º Distrito Naval -->
+                    <div class="app-result-row">
+                      <div class="app-result-icon bg-blue">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                          <path d="M12 22V8"/><path d="M5 12H2a10 10 0 0 0 20 0h-3"/><path d="M8 5a4 4 0 1 0 8 0 4 4 0 0 0-8 0Z"/>
+                        </svg>
+                      </div>
+                      <div class="app-result-content">
+                        <strong class="app-result-title">Comando do 4º Distrito Naval</strong>
+                        <span class="app-result-sub">Com4ºDN • PA</span>
+                      </div>
+                      <svg class="app-result-chevron" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+                    </div>
+
+                    <!-- Item 3: Delegacia da Capitania dos Portos -->
+                    <div class="app-result-row">
+                      <div class="app-result-icon bg-blue">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                          <path d="M12 22V8"/><path d="M5 12H2a10 10 0 0 0 20 0h-3"/><path d="M8 5a4 4 0 1 0 8 0 4 4 0 0 0-8 0Z"/>
+                        </svg>
+                      </div>
+                      <div class="app-result-content">
+                        <strong class="app-result-title">Delegacia da Capitania dos Portos em La...</strong>
+                        <span class="app-result-sub">DelLaguna • SC</span>
+                      </div>
+                      <svg class="app-result-chevron" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+                    </div>
+
+                    <!-- Item 4: Hotel de Trânsito Rio Negro -->
+                    <div class="app-result-row">
+                      <div class="app-result-icon bg-brown">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                          <path d="M2 4v16"/><path d="M2 8h18a2 2 0 0 1 2 2v10"/><path d="M2 17h20"/><circle cx="6" cy="11" r="2"/>
+                        </svg>
+                      </div>
+                      <div class="app-result-content">
+                        <strong class="app-result-title">Hotel de Trânsito Rio Negro</strong>
+                        <span class="app-result-sub">Comando do 9º Distrito Naval • AMAZONAS - AM</span>
+                      </div>
+                      <svg class="app-result-chevron" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+                    </div>
+
+                    <!-- Item 5: Hotel de Trânsito da Marinha em Belém -->
+                    <div class="app-result-row">
+                      <div class="app-result-icon bg-brown">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                          <path d="M2 4v16"/><path d="M2 8h18a2 2 0 0 1 2 2v10"/><path d="M2 17h20"/><circle cx="6" cy="11" r="2"/>
+                        </svg>
+                      </div>
+                      <div class="app-result-content">
+                        <strong class="app-result-title">Hotel de Trânsito da Marinha em Belém</strong>
+                        <span class="app-result-sub">Comando do 4º Distrito Naval • PARÁ - PA</span>
+                      </div>
+                      <svg class="app-result-chevron" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+                    </div>
+
+                    <!-- Item 6: Unidade Integrada de Saúde Mental -->
+                    <div class="app-result-row">
+                      <div class="app-result-icon bg-blue">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                          <path d="M12 22V8"/><path d="M5 12H2a10 10 0 0 0 20 0h-3"/><path d="M8 5a4 4 0 1 0 8 0 4 4 0 0 0-8 0Z"/>
+                        </svg>
+                      </div>
+                      <div class="app-result-content">
+                        <strong class="app-result-title">Unidade Integrada de Saúde Mental</strong>
+                        <span class="app-result-sub">UISM • RJ</span>
+                      </div>
+                      <svg class="app-result-chevron" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Teclado Virtual Nativo do iOS -->
+                <div class="ios-keyboard" aria-hidden="true">
+                  <div class="ios-kb-row">
+                    <span class="ios-key" data-key="q" id="ios-key-q">q</span>
+                    <span class="ios-key" data-key="w">w</span>
+                    <span class="ios-key" data-key="e" id="ios-key-e">e</span>
+                    <span class="ios-key" data-key="r" id="ios-key-r">r</span>
+                    <span class="ios-key" data-key="t">t</span>
+                    <span class="ios-key" data-key="y">y</span>
+                    <span class="ios-key" data-key="u" id="ios-key-u">u</span>
+                    <span class="ios-key" data-key="i" id="ios-key-i">i</span>
+                    <span class="ios-key" data-key="o" id="ios-key-o">o</span>
+                    <span class="ios-key" data-key="p">p</span>
+                  </div>
+                  <div class="ios-kb-row ios-kb-row-2">
+                    <span class="ios-key" data-key="a" id="ios-key-a">a</span>
+                    <span class="ios-key" data-key="s">s</span>
+                    <span class="ios-key" data-key="d" id="ios-key-d">d</span>
+                    <span class="ios-key" data-key="f">f</span>
+                    <span class="ios-key" data-key="g">g</span>
+                    <span class="ios-key" data-key="h" id="ios-key-h">h</span>
+                    <span class="ios-key" data-key="j">j</span>
+                    <span class="ios-key" data-key="k">k</span>
+                    <span class="ios-key" data-key="l">l</span>
+                  </div>
+                  <div class="ios-kb-row">
+                    <span class="ios-key ios-key-special">⇧</span>
+                    <span class="ios-key" data-key="z">z</span>
+                    <span class="ios-key" data-key="x">x</span>
+                    <span class="ios-key" data-key="c" id="ios-key-c">c</span>
+                    <span class="ios-key" data-key="v">v</span>
+                    <span class="ios-key" data-key="b">b</span>
+                    <span class="ios-key" data-key="n" id="ios-key-n">n</span>
+                    <span class="ios-key" data-key="m" id="ios-key-m">m</span>
+                    <span class="ios-key ios-key-special">⌫</span>
+                  </div>
+                  <div class="ios-kb-row ios-kb-row-bottom">
+                    <span class="ios-key ios-key-num">123</span>
+                    <span class="ios-key ios-key-space">espaço</span>
+                    <span class="ios-key ios-key-search">buscar</span>
+                  </div>
+                  <div class="ios-kb-dock">
+                    <span class="ios-kb-emoji">😊</span>
+                    <div class="ios-home-bar"></div>
+                    <span class="ios-kb-mic">🎤</span>
+                  </div>
+                </div>
+
+                <!-- Bottom Sheet de Detalhes da CHA (Fiel ao Print 2!) -->
+                <div class="app-bottom-sheet" id="app-bottom-sheet" inert>
+                  <button type="button" class="app-sheet-handle" id="app-sheet-close-handle" aria-label="Fechar detalhes"></button>
+                  <div class="app-sheet-scrollable">
+                    <div class="app-sheet-header">
+                      <div class="app-sheet-badge">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                          <rect x="3" y="4" width="18" height="16" rx="3"/>
+                          <circle cx="12" cy="10" r="3"/>
+                          <path d="M7 17h10"/>
+                          <path d="M10 4V2h4v2"/>
+                        </svg>
+                      </div>
+                      <div>
+                        <span class="app-sheet-eyebrow">HABILITAÇÃO NÁUTICA</span>
+                        <h3 class="app-sheet-title">CARTEIRA DE HABILITAÇÃO DE AMADOR (CHA)</h3>
+                      </div>
+                    </div>
+                    <p class="app-sheet-lead">
+                      Serviço oficial para obter a Carteira de Habilitação de Amador ou ascender de categoria. A CHA habilita o cidadão a conduzir embarcações de esporte ou recreio, em caráter não profissional, conforme a categoria emitida pela Autoridade Marítima.
+                    </p>
+
+                    <div class="app-sheet-block">
+                      <h4>DOCUMENTOS NECESSÁRIOS</h4>
+                      <ul class="app-sheet-checklist">
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg> Documento oficial de identificação com foto</li>
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg> CPF</li>
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg> Comprovante de residência/endereço</li>
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg> Documentos e comprovantes exigidos na NORMAM aplicável à categoria solicitada</li>
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg> Comprovante de pagamento da GRU, quando houver taxa para o serviço</li>
+                      </ul>
+                    </div>
+
+                    <div class="app-sheet-block">
+                      <h4>PASSO A PASSO PARA REALIZAÇÃO</h4>
+                      <ol class="app-sheet-steps">
+                        <li><span>1</span> Consultar a NORMAM de amadores para verificar a categoria desejada e os requisitos atualizados.</li>
+                        <li><span>2</span> Acessar a Plataforma de Serviços Digitais da Marinha pelo Gov.br ou verificar a Organização Militar mais próxima.</li>
+                        <li><span>3</span> Emitir e pagar a GRU quando o serviço exigir taxa.</li>
+                        <li><span>4</span> Agendar o atendimento ou comparecer à Capitania, Delegacia ou Agência responsável.</li>
+                        <li><span>5</span> Acompanhar o andamento do processo pela plataforma oficial.</li>
+                      </ol>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="smart-demo-controls" aria-label="Etapas da demonstração">
+            <div class="smart-demo-steps" aria-label="Etapas da busca">
+              <span data-smart-step="0"><b>01</b> Digite</span>
+              <span data-smart-step="1" aria-current="step"><b>02</b> Encontre</span>
+              <span data-smart-step="2"><b>03</b> Acesse</span>
+            </div>
+            <div class="smart-demo-footer">
+              <div class="smart-demo-heading">
+                <span class="smart-demo-live"><i aria-hidden="true"></i><span data-smart-status>Demonstração automática</span></span>
+                <strong class="sr-only" data-smart-demo-title>Orientações para sua habilitação náutica</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="smart-copy" data-reveal="slide-right">
+          <span class="eyebrow">BUSCA INTELIGENTE</span>
+          <h2 id="smart-title">Encontre o que precisa.<span>Do seu jeito.</span></h2>
+          <p>Uma sigla, um nome ou uma frase do dia a dia. Encontre serviços, concursos e recursos de bem-estar em uma só busca.</p>
+          <div class="smart-examples">
+            <p class="smart-examples-label" id="smart-examples-label">Escolha um exemplo e veja no app</p>
+            <div class="smart-demo-tabs" role="group" aria-labelledby="smart-examples-label">
+              <button type="button" aria-pressed="true" data-smart-scenario="0">
+                <span class="smart-example-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="5" width="18" height="14" rx="3"/><circle cx="8" cy="11" r="2"/><path d="M5 16c0-3 6-3 6 0m3-6h4m-4 4h4"/></svg></span>
+                <span class="smart-example-copy"><strong>“CHA”</strong><span>Orientações para sua habilitação náutica</span></span><span class="smart-example-arrow" aria-hidden="true">↗</span>
+              </button>
+              <button type="button" aria-pressed="false" data-smart-scenario="1">
+                <span class="smart-example-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="m2 9 10-5 10 5-10 5L2 9Zm4 2v6c4 3 8 3 12 0v-6m4-2v8"/></svg></span>
+                <span class="smart-example-copy"><strong>“Quadro técnico”</strong><span>Concursos, editais e formas de ingresso</span></span><span class="smart-example-arrow" aria-hidden="true">↗</span>
+              </button>
+              <button type="button" aria-pressed="false" data-smart-scenario="2">
+                <span class="smart-example-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="15" cy="4" r="2"/><path d="m12 8 4 4h4M5 10l4-3 4 2-3 6 4 3v4M3 20l5-2 2-3"/></svg></span>
+                <span class="smart-example-copy"><strong>“Corrida”</strong><span>Seus treinos e sua evolução por perto</span></span><span class="smart-example-arrow" aria-hidden="true">↗</span>
+              </button>
+            </div>
+          </div>
+          <p class="smart-search-note"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="m5 12 4 4L19 6"/></svg>A busca também reconhece palavras sem acento e pequenos erros de digitação.</p>
+          <a class="button button-dark" href="#download">
+            Explore no aplicativo
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg>
+          </a>
+          <span class="smart-download-note">Disponível para Android e iOS</span>
+        </div>
+      </section>
+
+      <!-- Qualidade de Vida -->
+      <section class="wellness-section" id="qualidade-vida" aria-labelledby="wellness-title">
+        <div class="wellness-bg" data-parallax data-speed="0.055">
+          <picture>
+            <source media="(max-width: 760px)" srcset="assets/images/qualidade-vida-mobile.webp" />
+            <img src="assets/images/qualidade-vida-desktop.webp" width="1672" height="941" alt="Pessoas praticando hidratação, corrida e ciclismo" loading="lazy" />
+          </picture>
+        </div>
+        <div class="wellness-overlay" aria-hidden="true"></div>
+        <div class="shell wellness-content">
+          <div class="wellness-copy" data-reveal="slide-left">
+            <span class="eyebrow">Qualidade de vida</span>
+            <h2 id="wellness-title">Movimento que vira <em>evolução.</em></h2>
+            <p>Registre hidratação, corrida, caminhada e ciclismo. Acompanhe metas, histórico, gráficos e rankings — com controles de privacidade para você decidir o que compartilhar.</p>
+            <div class="wellness-pills" role="tablist" aria-label="Selecione a atividade">
+              <button type="button" role="tab" id="pill-hydration" data-wellness-select="0" aria-pressed="true" aria-selected="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22a7 7 0 0 0 7-7c0-2-1-3.9-3-5.5s-3.5-4-4-6.5c-.5 2.5-2 4.9-4 6.5C6 11.1 5 13 5 15a7 7 0 0 0 7 7z"/></svg>
+                Hidratação
+              </button>
+              <button type="button" role="tab" id="pill-run" data-wellness-select="1" aria-pressed="false" aria-selected="false">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="15" cy="4" r="2"/><path d="m12 8-3 5 5 3v5"/><path d="m12 8 4 4h4"/><path d="m12 8-4-1-3 3"/><path d="m9 13-3 6H3"/></svg>
+                Corrida
+              </button>
+              <button type="button" role="tab" id="pill-cycle" data-wellness-select="2" aria-pressed="false" aria-selected="false">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18.5" cy="17.5" r="3.5"/><circle cx="5.5" cy="17.5" r="3.5"/><circle cx="15" cy="5" r="1.5"/><path d="M12 17.5V14l-3-3 4-3 2 3h2"/></svg>
+                Ciclismo
+              </button>
+            </div>
+            <a class="button button-primary" href="#download">
+              Baixar e treinar no app
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg>
+            </a>
+          </div>
+          <div class="wellness-devices" aria-label="Telas de controle hídrico, corrida e ciclismo do aplicativo">
+            <div class="wellness-stage">
+            <div class="phone phone-run" data-wellness-phone="1" data-position="left">
+              <span class="phone-speaker" aria-hidden="true"></span>
+              <img src="assets/images/corrida.webp" width="900" height="1948" alt="Tela de registro de treinos de corrida" loading="lazy" />
+            </div>
+            <div class="phone phone-cycle" data-wellness-phone="2" data-position="right">
+              <span class="phone-speaker" aria-hidden="true"></span>
+              <img src="assets/images/ciclismo.webp" width="900" height="1948" alt="Tela de velocímetro e navegação no ciclismo" loading="lazy" />
+              <svg class="cycle-dashboard" viewBox="0 0 900 1948" preserveAspectRatio="none" role="img" aria-labelledby="cycle-preview-title cycle-preview-description" xmlns="http://www.w3.org/2000/svg">
+                <title id="cycle-preview-title">Simulação de pedalada</title>
+                <desc id="cycle-preview-description">Velocidade, tempo e distância ilustrativos de uma pedalada, com ponteiro animado.</desc>
+                <rect x="270" y="128" width="565" height="50" fill="#eff4f7"/>
+                <text x="280" y="169" fill="#14181b" font-size="30" font-weight="800">CICLISMO EM ANDAMENTO</text>
+                <!-- Preserva os controles e ícones do painel original na captura. -->
+                <rect x="60" y="585" width="220" height="54" fill="#172c42"/>
+                <rect x="660" y="585" width="180" height="54" fill="#172c42"/>
+                <rect x="712" y="498" width="85" height="22" fill="#172c42"/>
+                <text x="794" y="513" text-anchor="end" fill="#b8c9d9" font-size="15">Excelente</text>
+                <circle cx="450" cy="470" r="196" fill="#172c42"/>
+                <path d="M280 568 A196 196 0 1 1 620 568" fill="none" stroke="#405970" stroke-width="16" stroke-linecap="round"/>
+                <path data-cycle-arc="" d="M280 568 A196 196 0 1 1 620 568" pathLength="100" fill="none" stroke="#38ef7d" stroke-width="16" stroke-linecap="round" stroke-dasharray="0 100"/>
+                <g font-family="Arial, sans-serif"><line x1="296.7" y1="558.5" x2="313.2" y2="549.0" stroke="#d4e5e9" stroke-width="4" stroke-linecap="round"/><text x="331.4" y="544.5" text-anchor="middle" fill="#b8dcd7" font-size="18" data-cycle-tick="0">0</text><line x1="281.7" y1="524.7" x2="290.2" y2="521.9" stroke="#38b98d" stroke-width="2" stroke-linecap="round"/><line x1="274.0" y1="488.5" x2="292.9" y2="486.5" stroke="#38b98d" stroke-width="4" stroke-linecap="round"/><text x="313.8" y="490.3" text-anchor="middle" fill="#b8dcd7" font-size="18" data-cycle-tick="2">2</text><line x1="274.0" y1="451.5" x2="282.9" y2="452.4" stroke="#38b98d" stroke-width="2" stroke-linecap="round"/><line x1="281.7" y1="415.3" x2="299.7" y2="421.2" stroke="#d4e5e9" stroke-width="4" stroke-linecap="round"/><text x="319.7" y="433.7" text-anchor="middle" fill="#b8dcd7" font-size="18" data-cycle-tick="4">4</text><line x1="296.7" y1="381.5" x2="304.5" y2="386.0" stroke="#38b98d" stroke-width="2" stroke-linecap="round"/><line x1="318.5" y1="351.6" x2="332.6" y2="364.3" stroke="#38b98d" stroke-width="4" stroke-linecap="round"/><text x="348.2" y="384.3" text-anchor="middle" fill="#b8dcd7" font-size="18" data-cycle-tick="6">6</text><line x1="346.0" y1="326.8" x2="351.3" y2="334.1" stroke="#38b98d" stroke-width="2" stroke-linecap="round"/><line x1="378.0" y1="308.3" x2="385.7" y2="325.7" stroke="#d4e5e9" stroke-width="4" stroke-linecap="round"/><text x="394.3" y="350.8" text-anchor="middle" fill="#b8dcd7" font-size="18" data-cycle-tick="8">8</text><line x1="413.2" y1="296.9" x2="415.1" y2="305.7" stroke="#38b98d" stroke-width="2" stroke-linecap="round"/><line x1="450.0" y1="293.0" x2="450.0" y2="312.0" stroke="#38b98d" stroke-width="4" stroke-linecap="round"/><text x="450.0" y="339.0" text-anchor="middle" fill="#b8dcd7" font-size="18" data-cycle-tick="10">10</text><line x1="486.8" y1="296.9" x2="484.9" y2="305.7" stroke="#38b98d" stroke-width="2" stroke-linecap="round"/><line x1="522.0" y1="308.3" x2="514.3" y2="325.7" stroke="#d4e5e9" stroke-width="4" stroke-linecap="round"/><text x="505.7" y="350.8" text-anchor="middle" fill="#b8dcd7" font-size="18" data-cycle-tick="12">12</text><line x1="554.0" y1="326.8" x2="548.7" y2="334.1" stroke="#38b98d" stroke-width="2" stroke-linecap="round"/><line x1="581.5" y1="351.6" x2="567.4" y2="364.3" stroke="#38b98d" stroke-width="4" stroke-linecap="round"/><text x="551.8" y="384.3" text-anchor="middle" fill="#b8dcd7" font-size="18" data-cycle-tick="14">14</text><line x1="603.3" y1="381.5" x2="595.5" y2="386.0" stroke="#38b98d" stroke-width="2" stroke-linecap="round"/><line x1="618.3" y1="415.3" x2="600.3" y2="421.2" stroke="#d4e5e9" stroke-width="4" stroke-linecap="round"/><text x="580.3" y="433.7" text-anchor="middle" fill="#b8dcd7" font-size="18" data-cycle-tick="16">16</text><line x1="626.0" y1="451.5" x2="617.1" y2="452.4" stroke="#38b98d" stroke-width="2" stroke-linecap="round"/><line x1="626.0" y1="488.5" x2="607.1" y2="486.5" stroke="#38b98d" stroke-width="4" stroke-linecap="round"/><text x="586.2" y="490.3" text-anchor="middle" fill="#b8dcd7" font-size="18" data-cycle-tick="18">18</text><line x1="618.3" y1="524.7" x2="609.8" y2="521.9" stroke="#38b98d" stroke-width="2" stroke-linecap="round"/><line x1="603.3" y1="558.5" x2="586.8" y2="549.0" stroke="#d4e5e9" stroke-width="4" stroke-linecap="round"/><text x="568.6" y="544.5" text-anchor="middle" fill="#b8dcd7" font-size="18" data-cycle-tick="20">20</text></g>
+                <g data-cycle-needle="" transform="rotate(0 450 470)">
+                  <path d="M445 459 321 545 455 480Z" fill="#32eb95"/>
+                </g>
+                <circle cx="450" cy="470" r="21" fill="#081c2c"/><circle cx="450" cy="470" r="14" fill="#139d95"/><circle cx="450" cy="470" r="5" fill="#fff"/>
+                <g fill="#fff" text-anchor="middle" font-weight="800">
+                  <text x="450" y="579" font-size="66" class="cycle-speed" data-cycle-speed="">0.0</text>
+                  <text x="127" y="621" font-size="38" data-cycle-distance="">0.00</text>
+                  <text x="754" y="621" font-size="38" data-cycle-time="">00:00</text>
+                </g>
+                <g fill="#b8c9d9" font-weight="700" text-anchor="middle" letter-spacing="2">
+                  <text x="450" y="623" font-size="26">km/h</text>
+                  <text x="200" y="617" font-size="21">km</text>
+                </g>
+                <circle cx="450" cy="1657" r="81" fill="#15be94"/>
+                <g fill="#fff"><rect x="428" y="1630" width="15" height="54" rx="4"/><rect x="457" y="1630" width="15" height="54" rx="4"/></g>
+              </svg>
+            </div>
+            <div class="phone phone-hydration" data-wellness-phone="0" data-position="center">
+              <svg class="hydration-screen" viewBox="0 0 946 2048" role="img" aria-labelledby="hydration-preview-title hydration-preview-description" xmlns="http://www.w3.org/2000/svg">
+                <title id="hydration-preview-title">Controle hídrico do aplicativo Marinha do Brasil</title>
+                <desc id="hydration-preview-description">Exemplo da tela: 1000 de 2608 ml, 38% da meta. Sequência de 2 dias, 372 XP, nível 1. Atalhos para registrar 150, 250 ou 500 ml e outras quantidades.</desc>
+                <defs>
+                  <linearGradient id="hydration-background" x2="0.6" y2="1"><stop stop-color="#f2f9ff"/><stop offset=".2" stop-color="#f1f4f8"/><stop offset=".75" stop-color="#e9eff8"/><stop offset="1" stop-color="#f1f4f8"/></linearGradient>
+                  <linearGradient id="hydration-blue" x2="1" y2="1"><stop stop-color="#00c6ee"/><stop offset="1" stop-color="#0072ff"/></linearGradient>
+                  <linearGradient id="hydration-liquid" gradientUnits="userSpaceOnUse" x1="0" y1="300" x2="140" y2="837"><stop stop-color="#6de8ff"/><stop offset=".58" stop-color="#00a9f4"/><stop offset="1" stop-color="#0072ff"/></linearGradient>
+                  <linearGradient id="hydration-gold"><stop stop-color="#ffba2e"/><stop offset="1" stop-color="#cfae31"/></linearGradient>
+                  <clipPath id="hydration-tank"><rect x="240" y="277" width="466" height="560" rx="112"/></clipPath>
+                  <path id="hydration-drop" d="M24 0S4 18 4 32a20 20 0 0 0 40 0C44 18 24 0Z"/>
+                  <g id="hydration-drop-shine"><use href="#hydration-drop"/><path d="M14 33c0 6 4 10 10 10" fill="none" stroke="white" stroke-width="4" stroke-linecap="round"/></g>
+                  <g id="hydration-back" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><path d="m14 0-14 14 14 14"/></g>
+                </defs>
+                <rect width="946" height="2048" fill="url(#hydration-background)"/>
+                <g class="hydration-status" fill="#070707"><text x="62" y="65">21:35</text><path d="m170 47 25-9-10 27-4-12Z"/><rect x="729" y="53" width="8" height="12" rx="3"/><rect x="740" y="47" width="8" height="18" rx="3"/><rect x="751" y="41" width="8" height="24" rx="3"/><rect x="762" y="36" width="8" height="29" rx="3"/><text x="784" y="64" font-size="30" font-weight="400">4G</text><rect x="838" y="37" width="53" height="30" rx="7" fill="#d1d2d3"/><rect x="838" y="37" width="33" height="30" rx="7" fill="#ffcb00"/><text x="843" y="61" font-size="26">52</text></g>
+                <circle cx="71" cy="167" r="44" fill="#e6e8ec"/><use href="#hydration-back" x="63" y="152" color="#14181b"/>
+                <rect x="218" y="130" width="74" height="74" rx="28" fill="url(#hydration-blue)"/>
+                <use href="#hydration-drop-shine" transform="translate(238 151) scale(.68)" fill="white"/>
+                <text x="315" y="169" class="hydration-header-title">CONTROLE HÍDRICO</text>
+                <text x="315" y="197" class="hydration-header-sub">REGISTRO DE SAÚDE</text>
+                <circle cx="875" cy="167" r="43" fill="#00c6ff1a" stroke="#00c6ff55" stroke-width="2"/>
+                <g stroke="#00c6ee" stroke-width="4"><path d="M858 155h34m-34 12h34m-34 12h34M881 149v12m-14 0v12m11 0v12"/></g>
+                <path d="M0 235H946" stroke="#00c6ff38" stroke-width="3"/>
+                <rect x="240" y="277" width="466" height="560" rx="112" fill="#ffffff45"/>
+                <path d="M315 427c40-75 83-94 133-105" fill="none" stroke="#fff" stroke-opacity=".55" stroke-width="5"/>
+                <use href="#hydration-drop-shine" transform="translate(441 307) scale(1.34)" fill="#00c6eecd"/>
+                <g clip-path="url(#hydration-tank)">
+                  <g class="hydration-level" transform="translate(240 0)"><path class="hydration-wave" d="M0 618C80 650 104 662 178 625S275 589 334 614S410 639 464 618C544 650 568 662 642 625S739 589 798 614S874 639 928 618V1100H0Z" fill="url(#hydration-liquid)"/></g>
+                  <g class="hydration-bubbles" fill="none" stroke="#a3eaff" stroke-opacity=".35" stroke-width="3"><circle cx="392" cy="678" r="6"/><circle cx="561" cy="701" r="7"/><circle cx="633" cy="667" r="9"/><circle cx="371" cy="774" r="7"/></g>
+                </g>
+                <rect x="240" y="277" width="466" height="560" rx="112" fill="none" stroke="#00c6ef55" stroke-width="4"/>
+                <text x="473" y="751" text-anchor="middle" class="hydration-percent">38%</text>
+                <text x="450" y="946" text-anchor="end" class="hydration-volume">1000</text><text x="459" y="946" class="hydration-goal">/ 2608 ml</text>
+                <text x="473" y="1053" text-anchor="middle" class="hydration-message">Bom começo! Continue firme! 🚢</text>
+                <g class="hydration-stats">
+                  <rect x="46" y="1127" width="268" height="202" rx="44" fill="#78889612" stroke="#ff6a352e" stroke-width="2"/>
+                  <path d="M176 1166c-23 18-18 36-7 43-5-12 2-18 10-24 1 9 16 15 9 25 17-8 17-24 7-34-1 8-8 8-10 4s-3-11-2-13c-2 0-5 2-7 4Z" fill="#ff7038"/>
+                  <text x="180" y="1257" class="hydration-stat-value">2 DIAS</text><text x="180" y="1292" class="hydration-stat-label">Streak</text>
+                  <rect x="339" y="1127" width="269" height="202" rx="44" fill="#78889612" stroke="#ffba2e33" stroke-width="2"/>
+                  <path d="m473 1169 7 13 15 3-11 11 2 16-13-7-14 7 3-16-12-11 16-3Z" fill="#ffba2e"/>
+                  <text x="473" y="1257" class="hydration-stat-value">372 XP</text><text x="473" y="1292" class="hydration-stat-label">Pontos</text>
+                  <rect x="632" y="1127" width="268" height="202" rx="44" fill="#78889612" stroke="#00c6ee33" stroke-width="2"/>
+                  <path d="m766 1166-18 7v17c0 10 9 18 18 22 9-4 18-12 18-22v-17Z" fill="#00c6ee"/>
+                  <text x="766" y="1257" class="hydration-stat-value">NÍVEL 1</text><text x="766" y="1292" class="hydration-stat-label">Rank</text>
+                </g>
+                <rect x="46" y="1376" width="854" height="198" rx="43" fill="#78889612" stroke="#ffba2e2b" stroke-width="2"/>
+                <text x="85" y="1443" class="hydration-xp-title">Progresso XP</text><text x="860" y="1443" text-anchor="end" class="hydration-xp-count">372 / 500 XP</text>
+                <rect x="85" y="1471" width="776" height="23" rx="12" fill="#d6dbdf"/><path d="M97 1471H663V1494H97a12 12 0 0 1 0-23Z" fill="url(#hydration-gold)"/>
+                <text x="85" y="1532" class="hydration-xp-note">Faltam 128 XP para o Nível 2</text>
+                <g class="hydration-actions">
+                  <rect x="46" y="1638" width="193" height="204" rx="48" fill="url(#hydration-blue)"/><rect x="267" y="1638" width="193" height="204" rx="48" fill="url(#hydration-blue)"/><rect x="487" y="1638" width="193" height="204" rx="48" fill="url(#hydration-blue)"/><rect x="708" y="1638" width="192" height="204" rx="48" fill="url(#hydration-blue)"/><rect x="708" y="1638" width="192" height="204" rx="48" fill="#537098aa" stroke="#00c6ee66" stroke-width="3"/>
+                  <g fill="none" stroke="white" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"><path d="M124 1690h30v19a15 15 0 0 1-30 0v-19Zm30 0h5a7 7 0 0 1 0 14h-5m-30 28h34"/><path d="m342 1689 6 46h30l6-46h-42Z"/></g>
+                  <use href="#hydration-drop" transform="translate(352 1708) scale(.43)" fill="white"/><use href="#hydration-drop-shine" transform="translate(557 1684) scale(1.03)" fill="white"/>
+                  <path d="m782 1723 31-31 13 13-31 31-15 3Zm35-35 5-5 13 13-5 5Z" fill="#ffffff99"/>
+                  <text x="142" y="1792">+150ml</text><text x="363" y="1792">+250ml</text><text x="583" y="1792">+500ml</text><text x="804" y="1792" fill="#ffffff99">Outro</text>
+                </g>
+                <g fill="none" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><path d="M113 1936c-12-16-25-5-27 0m0-9v10h13" stroke="#5c6972"/><path d="M496 1927c-21-13-31 15-9 19 6 1 10-2 13-7m-4-20v10h-10" stroke="#ff5969"/></g>
+                <text x="139" y="1945" class="hydration-undo">Desfazer (500ml)</text><path d="M431 1917v35" stroke="#e5e9ee" stroke-width="2"/><text x="525" y="1945" class="hydration-reset">Zerar ingestão de hoje</text>
+                <rect x="304" y="2019" width="338" height="11" rx="6" fill="#000"/>
+              </svg>
+            </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Apple Watch: explore as telas do aplicativo. -->
+      <section class="watch-section shell" id="apple-watch" aria-labelledby="watch-title">
+        <div class="watch-atmosphere" aria-hidden="true">
+          <div class="watch-ocean-light"></div>
+          <svg class="watch-ocean-waves" viewBox="0 0 1600 900" fill="none" preserveAspectRatio="xMidYMid slice" focusable="false">
+            <defs>
+              <linearGradient id="watch-wave-stroke" x1="550" y1="860" x2="1510" y2="100" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#4FAFC4" stop-opacity="0"/>
+                <stop offset=".4" stop-color="#4FAFC4" stop-opacity=".2"/>
+                <stop offset=".72" stop-color="#A9E5E8" stop-opacity=".55"/>
+                <stop offset="1" stop-color="#4FAFC4" stop-opacity="0"/>
+              </linearGradient>
+              <linearGradient id="watch-wave-fill" x1="950" y1="800" x2="1450" y2="180" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#1D849F" stop-opacity="0"/>
+                <stop offset=".55" stop-color="#318FA4" stop-opacity=".16"/>
+                <stop offset="1" stop-color="#5FC1CE" stop-opacity="0"/>
+              </linearGradient>
+              <linearGradient id="watch-wave-gold" x1="750" y1="880" x2="1510" y2="180" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#E7C477" stop-opacity="0"/>
+                <stop offset=".55" stop-color="#E7C477" stop-opacity=".3"/>
+                <stop offset="1" stop-color="#E7C477" stop-opacity="0"/>
+              </linearGradient>
+            </defs>
+            <g class="watch-wave-flow">
+              <path fill="url(#watch-wave-fill)" d="M520 980C680 710 1060 880 1190 555S1280 120 1670 20L1710 140C1330 205 1420 440 1280 660S790 830 670 990Z"/>
+              <g stroke="url(#watch-wave-stroke)" stroke-width="1">
+                <path d="M520 980C680 710 1060 880 1190 555S1280 120 1670 20"/>
+                <path d="M570 990C730 725 1110 890 1220 590S1320 150 1690 60"/>
+                <path d="M620 990C780 760 1150 900 1250 625S1380 175 1700 100"/>
+                <path d="M670 990C790 830 1140 890 1280 660S1330 205 1710 140"/>
+              </g>
+              <path class="watch-wave-gold" stroke="url(#watch-wave-gold)" d="M740 1000C890 760 1150 955 1330 640S1440 240 1720 215"/>
+            </g>
+            <g class="watch-wave-echo" stroke="url(#watch-wave-stroke)" stroke-width=".8">
+              <path d="M420 920C610 580 940 780 1040 420S1400 70 1620-80"/>
+              <path d="M460 960C650 620 980 820 1080 460S1440 110 1660-40"/>
+            </g>
+          </svg>
+        </div>
+        <div class="watch-copy">
+          <span class="eyebrow">MARINHA DO BRASIL · APPLE WATCH</span>
+          <h2 id="watch-title">A Marinha.<br><em>No seu pulso.</em></h2>
+          <p>Mais presença em cada movimento. Acompanhe suas atividades, cuide da hidratação e leve a Rádio Marinha com você.</p>
+          <div class="watch-highlights"><span>Seu movimento.</span><span>Seu bem-estar.</span><span>Sua Marinha.</span></div>
+          <a class="button button-dark" href="https://apps.apple.com/app/marinha-do-brasil/id6763670491" target="_blank" rel="noopener noreferrer">Conheça na App Store <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="watch-showcase">
+          <div class="watch-showcase-label"><span>FEITO PARA ACOMPANHAR VOCÊ</span><span>watchOS</span></div>
+          <div class="watch-device">
+            <div class="watch-crown" aria-hidden="true"></div>
+            <img src="assets/images/watch/corrida.jpg" width="416" height="496" alt="Tela de corrida no Apple Watch com tempo, distância, ritmo e batimentos" loading="lazy" data-watch-screen />
+          </div>
+          <div class="watch-caption" aria-live="polite" aria-atomic="true"><strong data-watch-title>Corrida</strong><p data-watch-description>Tempo, distância, ritmo e batimentos.</p></div>
+          <div class="watch-choices" aria-label="Explore os recursos do Apple Watch">
+            <button type="button" data-watch-select="corrida" aria-pressed="true"><span>Corrida</span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m9 5 7 7-7 7"/></svg></button>
+            <button type="button" data-watch-select="ciclismo" aria-pressed="false"><span>Ciclismo</span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m9 5 7 7-7 7"/></svg></button>
+            <button type="button" data-watch-select="controle_hidrico" aria-pressed="false"><span>Hidratação</span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m9 5 7 7-7 7"/></svg></button>
+            <button type="button" data-watch-select="prev_tempo" aria-pressed="false"><span>Tempo</span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m9 5 7 7-7 7"/></svg></button>
+            <button type="button" data-watch-select="radio_1" aria-pressed="false"><span>Rádio Marinha</span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m9 5 7 7-7 7"/></svg></button>
+          </div>
+          <p class="watch-preview-note">Selecione um recurso e explore as telas do app.</p>
+        </div>
+      </section>
+
+      <section class="news-section shell" id="noticias" aria-labelledby="news-title">
+        <div class="news-showcase">
+          <div class="news-showcase-heading"><span>POR DENTRO DO APP</span><span class="news-preview-tag">Notícias & alertas</span></div>
+          <div class="news-device-stage">
+            <div class="news-device-orbit" aria-hidden="true"></div>
+            <div class="phone phone-news">
+              <span class="phone-speaker" aria-hidden="true"></span>
+              <img src="assets/images/app-noticias.webp" width="900" height="1950" alt="Tela da Agência Marinha de Notícias, com busca e editorias no aplicativo oficial" loading="lazy" />
+            </div>
+            <div class="news-notification" data-kind="news">
+              <span class="news-notification-icon" aria-hidden="true"><svg class="" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9M10 21h4"/></svg></span>
+              <div class="news-notification-copy">
+                <div class="news-notification-meta"><span data-news-source>Agência Marinha</span><span>EXEMPLO</span></div>
+                <strong data-news-headline>Uma nova reportagem para você</strong>
+                <p data-news-message>Amazônia Azul, ciência e Defesa Naval direto da fonte.</p>
+              </div>
+            </div>
+          </div>
+          <div class="news-showcase-footer">
+            <span>Uma prévia das suas notificações</span>
+            <div class="news-preview-pagination" aria-hidden="true"><span data-news-dot="news" class="is-active"></span><span data-news-dot="weather"></span><span data-news-dot="payment"></span><b data-news-count>01 / 03</b></div>
+          </div>
+        </div>
+        <div class="news-copy">
+          <span class="eyebrow">Agência Marinha de Notícias</span>
+          <h2 id="news-title">Informação oficial.<em>Mais perto de você.</em></h2>
+          <p class="news-lead">Acompanhe a Marinha direto da fonte. Reportagens, previsão do tempo e informações úteis para o seu dia, reunidos no aplicativo.</p>
+          <div class="news-channels" role="group" aria-labelledby="news-channels-label">
+            <p id="news-channels-label">Explore o que chega até você</p>
+            <button class="news-channel" type="button" data-news-select="news" aria-pressed="true">
+              <span class="news-channel-icon"><svg class="" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h13v16H4zM17 8h3v10a2 2 0 0 1-2 2h-1M8 8h5m-5 4h5m-5 4h3"/></svg></span>
+              <span class="news-channel-copy"><strong>Notícias oficiais</strong><span>Amazônia Azul, Defesa Naval, ciência e sociedade.</span></span>
+              <span class="news-channel-arrow"><svg class="" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></span>
+            </button>
+            <button class="news-channel" type="button" data-news-select="weather" aria-pressed="false">
+              <span class="news-channel-icon"><svg class="" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17.5 17H7a5 5 0 1 1 4.7-6.7A5 5 0 0 1 21 13.5a3.5 3.5 0 0 1-3.5 3.5ZM8 20v1m5-1v1m5-1v1"/></svg></span>
+              <span class="news-channel-copy"><strong>Alertas meteorológicos</strong><span>Umidade, temperatura, probabilidade de chuva e visibilidade.</span></span>
+              <span class="news-channel-arrow"><svg class="" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></span>
+            </button>
+            <button class="news-channel" type="button" data-news-select="payment" aria-pressed="false">
+              <span class="news-channel-icon"><svg class="" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="M3 10h18m-13 5h3"/></svg></span>
+              <span class="news-channel-copy"><strong>Bilhete de pagamento</strong><span>Avisos de disponibilidade do BP Online · PAPEM.</span></span>
+              <span class="news-channel-arrow"><svg class="" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></span>
+            </button>
+          </div>
+          <p class="news-editorial-note"><svg class="" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4 4L19 6"/></svg><span>Encontre reportagens por assunto nas editorias e na busca da Agência.</span></p>
+          <a class="button button-dark news-download" href="#download">Leve a Marinha com você <svg class="" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
+          <p class="news-download-note">Aplicativo oficial e gratuito · Android e iOS</p>
+          <span class="sr-only" data-news-announcement aria-live="polite"></span>
+        </div>
+      </section>
+
+      <!-- Rádio Marinha -->
+      <section class="radio-section" id="radio" aria-labelledby="radio-title">
+        <div class="radio-image" data-parallax data-speed="0.05">
+          <img src="assets/images/radio-estudio.webp" width="1800" height="1005" alt="Estúdio da Rádio Marinha" loading="lazy" />
+        </div>
+        <div class="radio-overlay" aria-hidden="true"></div>
+        <div class="shell radio-content">
+          <div class="radio-copy" data-reveal>
+            <span class="live-badge"><i></i> Ao vivo</span>
+            <span class="eyebrow">Rádio Marinha</span>
+            <h2 id="radio-title">Rádio Marinha, ao vivo.</h2>
+            <p>Informação, música e conteúdo naval em uma transmissão oficial para acompanhar você onde estiver.</p>
+            <audio id="home-radio" preload="none" src="https://stm0.inovativa.net/listen/radiomarinha/radio.mp3"></audio>
+            <p class="sr-only" role="status" aria-live="polite" data-radio-status></p>
+            <button class="radio-button" type="button" data-radio-toggle="#home-radio" data-state="paused" aria-label="Ouvir Rádio Marinha ao vivo">
+              <span class="radio-play">
+                <span class="show-play">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m8 5 11 7-11 7V5Z"/></svg>
+                </span>
+                <span class="show-pause">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6v12"/><path d="M15 6v12"/></svg>
+                </span>
+              </span>
+              <span class="radio-station">
+                <img src="assets/images/app-icon.jpg" width="44" height="44" alt="" />
+                <span><small>Transmissão oficial</small><strong data-play-label>Ouvir agora</strong></span>
+              </span>
+              <span class="radio-wave" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span>
+            </button>
+            <div class="radio-meta" aria-label="Informações da transmissão">
+              <span><i aria-hidden="true"></i> Programação ao vivo</span>
+              <span>Áudio online</span>
+            </div>
+            <a class="text-link radio-link" href="https://radio-marinha-pagina.onrender.com/" target="_blank" rel="noopener noreferrer" data-radio-page>
+              Abrir a página completa da Rádio Marinha
+              <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg>
+            </a>
+          </div>
+          <div class="radio-devices" aria-label="Telas do player e das letras sincronizadas no aplicativo" data-reveal="scale">
+            <div class="phone radio-phone radio-phone-player">
+              <span class="phone-speaker" aria-hidden="true"></span>
+              <img src="assets/images/app-radio-player.webp" width="1242" height="2688" alt="Player da Rádio Marinha no aplicativo" loading="lazy" />
+              <span class="radio-phone-label">Player ao vivo</span>
+            </div>
+            <div class="phone radio-phone radio-phone-lyrics">
+              <span class="phone-speaker" aria-hidden="true"></span>
+              <img src="assets/images/app-radio-letras.webp" width="1242" height="2688" alt="Tela de letras sincronizadas da Rádio Marinha" loading="lazy" />
+              <span class="radio-phone-label">Letras sincronizadas</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Marinha Cultural -->
+      <section class="culture-section" id="cultura" aria-labelledby="culture-title">
+        <div class="culture-media" data-parallax data-speed="0.07">
+          <img src="assets/images/ilha-fiscal.webp" width="2000" height="1333" alt="Ilha Fiscal, patrimônio histórico e cultural da Marinha do Brasil" loading="lazy" />
+        </div>
+        <div class="culture-overlay" aria-hidden="true"></div>
+        <div class="shell culture-content">
+          <div class="culture-card" data-reveal="scale">
+            <span class="eyebrow">Marinha Cultural</span>
+            <h2 id="culture-title">História que permanece em movimento.</h2>
+            <p>Explore museus, passeios guiados e publicações sobre a história naval brasileira.</p>
+            <a class="button button-primary" href="#download">
+              Explorar no app
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg>
+            </a>
+          </div>
+          <div class="culture-devices" aria-label="Telas do Marinha Cultural no aplicativo" data-reveal="scale">
+            <div class="phone culture-phone culture-phone-main">
+              <span class="phone-speaker" aria-hidden="true"></span>
+              <img src="assets/images/app-marinha-cultural.webp" width="1242" height="2688" alt="Tela principal do Marinha Cultural no aplicativo" loading="lazy" />
+              <span class="culture-phone-label">Marinha Cultural</span>
+            </div>
+            <div class="phone culture-phone culture-phone-passeios">
+              <span class="phone-speaker" aria-hidden="true"></span>
+              <img src="assets/images/app-passeios.webp" width="1242" height="2688" alt="Tela de passeios e visitação no aplicativo" loading="lazy" />
+              <span class="culture-phone-label">Passeios</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Patrimônio Naval -->
+      <section class="heritage-section" id="patrimonio" aria-labelledby="heritage-title">
+        <div class="heritage-media" data-parallax data-speed="0.06">
+          <img src="assets/images/navio-vela.webp" width="2000" height="1333" alt="Navio Veleiro Cisne Branco da Marinha do Brasil" loading="lazy" />
+        </div>
+        <div class="heritage-overlay" aria-hidden="true"></div>
+        <div class="shell heritage-content">
+          <div class="heritage-devices" aria-label="Telas de Meios Navais, Hinos e Canções, e Organizações Militares no aplicativo" data-reveal="scale">
+            <div class="phone heritage-phone" data-heritage-phone="0" data-heritage-pos="center">
+              <span class="phone-speaker" aria-hidden="true"></span>
+              <img src="assets/images/app-meios-navais.webp" width="1242" height="2688" alt="Tela de Meios Navais no aplicativo Marinha do Brasil" loading="lazy" />
+              <span class="heritage-phone-label">Meios Navais</span>
+            </div>
+            <div class="phone heritage-phone" data-heritage-phone="1" data-heritage-pos="right">
+              <span class="phone-speaker" aria-hidden="true"></span>
+              <img src="assets/images/app-hinos-letra.webp" width="1242" height="2688" alt="Tela de Hinos e Canções com letra sincronizada no aplicativo Marinha do Brasil" loading="lazy" />
+              <span class="heritage-phone-label">Hinos e Canções</span>
+            </div>
+            <div class="phone heritage-phone" data-heritage-phone="2" data-heritage-pos="left">
+              <span class="phone-speaker" aria-hidden="true"></span>
+              <img src="assets/images/app-organizacoes-militares.webp" width="1242" height="2688" alt="Tela de Organizações Militares no aplicativo Marinha do Brasil" loading="lazy" />
+              <span class="heritage-phone-label">Organizações Militares</span>
+            </div>
+          </div>
+          <div class="heritage-card" data-reveal="scale">
+            <span class="eyebrow">Patrimônio Naval</span>
+            <h2 id="heritage-title">Tradição que navega com você.</h2>
+            <p>Conheça os símbolos, os meios e a identidade que fazem da Marinha uma instituição centenária.</p>
+            <ul class="heritage-list" role="tablist" aria-label="Categorias do Patrimônio Naval">
+              <li role="tab" tabindex="0" data-heritage-tab="0" aria-selected="true" class="is-active">
+                <span class="heritage-icon" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 21c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1 .6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"/><path d="M19.38 20A11.6 11.6 0 0 0 21 14l-9-4-9 4c0 2.9.94 5.34 2.81 7.76"/><path d="M19 13V7a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v6"/><path d="M12 10v4"/><path d="M12 2v3"/></svg>
+                </span>
+                <span>
+                  <strong>Meios Navais</strong>
+                  <small>Navios, submarinos e aeronaves da Marinha</small>
+                </span>
+              </li>
+              <li role="tab" tabindex="0" data-heritage-tab="1" aria-selected="false">
+                <span class="heritage-icon" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+                </span>
+                <span>
+                  <strong>Hinos e Canções</strong>
+                  <small>As músicas que marcam a tradição naval</small>
+                </span>
+              </li>
+              <li role="tab" tabindex="0" data-heritage-tab="2" aria-selected="false">
+                <span class="heritage-icon" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"/><path d="M6 12H4a2 2 0 0 0-2 2v8h2"/><path d="M18 9h2a2 2 0 0 1 2 2v11h-2"/><path d="M10 6h4"/><path d="M10 10h4"/><path d="M10 14h4"/><path d="M10 18h4"/></svg>
+                </span>
+                <span>
+                  <strong>Organizações Militares</strong>
+                  <small>Comandos, bases e unidades em todo o país</small>
+                </span>
+              </li>
+            </ul>
+            <a class="button button-primary" href="#download">
+              Conhecer no app
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Confiança & Privacidade -->
+      <section class="trust-section shell">
+        <div class="trust-heading" data-reveal>
+          <span class="eyebrow">Você no controle</span>
+          <h2>Privacidade e acessibilidade desde o início.</h2>
+        </div>
+        <div class="trust-grid">
+          <article data-reveal>
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/><path d="m9 12 2 2 4-4"/></svg>
+            </span>
+            <h3>Perfil sob sua escolha</h3>
+            <p>Decida se participa de rankings e quais informações ficam visíveis para outras pessoas.</p>
+          </article>
+          <article data-reveal>
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 6 6-3 6 3 6-3v15l-6 3-6-3-6 3V6Z"/><path d="M9 3v15"/><path d="M15 6v15"/></svg>
+            </span>
+            <h3>Rotas protegidas</h3>
+            <p>O traçado detalhado dos seus percursos não é exibido publicamente nos rankings.</p>
+          </article>
+          <article data-reveal>
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 2h10a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2Z"/><path d="M10 18h4"/></svg>
+            </span>
+            <h3>Experiência para todos</h3>
+            <p>Tema claro e escuro, alto contraste e ajuste de texto apoiam diferentes formas de uso.</p>
+          </article>
+        </div>
+        <a class="text-link" href="privacidade.html">
+          Ler a Política de Privacidade
+          <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg>
+        </a>
+        <p class="official-proof">Publicado pela Marinha do Brasil. <a href="https://www.marinha.mil.br/" target="_blank" rel="noopener noreferrer">Ver portal institucional <span aria-hidden="true">↗</span></a></p>
+      </section>
+
+      <!-- Painel de Download -->
+      <section class="download-panel" id="download" aria-labelledby="download-title">
+        <div class="download-copy">
+          <span class="eyebrow eyebrow-gold">Gratuito para iOS e Android</span>
+          <h2 id="download-title">A Marinha cada vez mais perto de você.</h2>
+          <p>Escolha a loja do seu dispositivo e baixe o aplicativo gratuitamente.</p>
+          <div class="store-buttons store-buttons-light">
+            <a href="https://apps.apple.com/app/marinha-do-brasil/id6763670491" target="_blank" rel="noopener noreferrer" aria-label="Baixar na App Store">
+              <svg class="brand-icon icon-apple" width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 6.38c.62-.75 1.04-1.8 1.01-2.88-.96.04-2.07.64-2.73 1.41-.58.68-.96 1.75-.91 2.8.03 0 .07.01.1.01 1-.02 1.96-.64 2.53-1.34z"/>
+              </svg>
+              <span><small>Baixar na</small><strong>App Store</strong></span>
+            </a>
+            <a href="https://play.google.com/store/apps/details?id=br.gov.marinhaoficial.app" target="_blank" rel="noopener noreferrer" aria-label="Disponível no Google Play">
+              <svg class="brand-icon icon-googleplay" width="22" height="22" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M3.609 1.814L13.792 12 3.61 22.186c-.352-.33-.564-.817-.564-1.378V3.192c0-.56.212-1.048.563-1.378z" fill="#00D3FF"/>
+                <path d="M17.186 8.608L13.792 12l3.394 3.392 3.844-2.186c.658-.374.658-.986 0-1.36l-3.844-2.238z" fill="#FFCE00"/>
+                <path d="M3.609 1.814l10.183 10.186 3.394-3.392L6.17 2.378C5.228 1.844 4.296 1.624 3.61 1.814z" fill="#00F076"/>
+                <path d="M3.609 22.186c.686.19 1.618-.03 2.56-.564l11.016-6.23-3.394-3.392L3.61 22.186z" fill="#FF3A44"/>
+              </svg>
+              <span><small>Disponível no</small><strong>Google Play</strong></span>
+            </a>
+          </div>
+          <ul class="download-trust" aria-label="Informações do aplicativo">
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4 4L19 6"/></svg>
+              Aplicativo oficial
+            </li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4 4L19 6"/></svg>
+              Download gratuito
+            </li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/><path d="m9 12 2 2 4-4"/></svg>
+              Privacidade respeitada
+            </li>
+          </ul>
+        </div>
+        <div class="qr-grid" aria-label="QR Codes para download">
+          <a href="https://apps.apple.com/app/marinha-do-brasil/id6763670491" target="_blank" rel="noopener noreferrer" class="qr-card">
+            <img src="assets/images/qr-appstore.png" width="180" height="180" alt="QR Code para baixar o aplicativo na App Store" />
+            <span>
+              <strong style="display: flex; align-items: center; gap: 6px;">
+                <svg class="brand-icon icon-apple" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 6.38c.62-.75 1.04-1.8 1.01-2.88-.96.04-2.07.64-2.73 1.41-.58.68-.96 1.75-.91 2.8.03 0 .07.01.1.01 1-.02 1.96-.64 2.53-1.34z"/></svg>
+                iPhone e iPad
+              </strong>
+              <small>Abrir App Store</small>
+            </span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
+          </a>
+          <a href="https://play.google.com/store/apps/details?id=br.gov.marinhaoficial.app" target="_blank" rel="noopener noreferrer" class="qr-card">
+            <img src="assets/images/qr-playstore.png" width="180" height="180" alt="QR Code para baixar o aplicativo no Google Play" />
+            <span>
+              <strong style="display: flex; align-items: center; gap: 6px;">
+                <svg class="brand-icon icon-android" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.523 15.3414c-.5511 0-.9993-.4486-.9993-.9997s.4482-.9993.9993-.9993c.551 0 .9993.4482.9993.9993.0001.5511-.4483.9997-.9993.9997m-11.046 0c-.5511 0-.9993-.4486-.9993-.9997s.4482-.9993.9993-.9993c.5511 0 .9993.4482.9993.9993 0 .5511-.4482.9997-.9993.9997m11.4045-6.02l1.9973-3.4592a.416.416 0 00-.1521-.5676.416.416 0 00-.5676.1521l-2.0223 3.503C15.5902 8.4114 13.8563 8.081 12 8.081s-3.5902.3304-5.1367.8687L4.841 5.4467a.4161.4161 0 00-.5677-.1521.4157.4157 0 00-.1521.5676l1.9973 3.4592C2.6889 11.1867.3432 14.6589 0 18.761h24c-.3432-4.1021-2.6889-7.5743-6.1185-9.4396"/></svg>
+                Android
+              </strong>
+              <small>Abrir Google Play</small>
+            </span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <!-- Rodapé Principal -->
+    <footer id="rodape" class="site-footer">
+      <div class="footer-top shell">
+        <div class="footer-brand">
+          <a class="brand" href="index.html" aria-label="Página inicial do Aplicativo Marinha do Brasil">
+            <img src="assets/images/logo-marinha-branca.webp" width="66" height="66" alt="Brasão da Marinha do Brasil" loading="lazy" />
+            <span class="brand-copy"><strong>MARINHA</strong><small>DO BRASIL</small></span>
+          </a>
+          <p>Informação, serviços e bem-estar. A Marinha cada vez mais perto de você.</p>
+          <div class="social-links" aria-label="Redes sociais da Marinha do Brasil">
+            <a href="https://www.instagram.com/marinhaoficial/" target="_blank" rel="noopener noreferrer" aria-label="Instagram da Marinha do Brasil"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" class="social-fill"/></svg></a>
+            <a href="https://www.facebook.com/marinhaoficial/" target="_blank" rel="noopener noreferrer" aria-label="Facebook da Marinha do Brasil"><svg viewBox="0 0 24 24" aria-hidden="true" class="social-brand-fill"><path d="M13.6 22v-8h2.8l.42-3.2H13.6V8.75c0-.93.26-1.56 1.62-1.56h1.73V4.33A23 23 0 0 0 14.43 4C11.9 4 10 5.52 10 8.31v2.49H7.1V14H10v8h3.6Z"/></svg></a>
+            <a href="https://www.youtube.com/@marinhaoficial" target="_blank" rel="noopener noreferrer" aria-label="YouTube da Marinha do Brasil"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12c0 2.2-.25 4.1-.55 5.05a2.5 2.5 0 0 1-1.75 1.75c-1.55.42-6.7.42-6.7.42s-5.15 0-6.7-.42a2.5 2.5 0 0 1-1.75-1.75C3.25 16.1 3 14.2 3 12s.25-4.1.55-5.05A2.5 2.5 0 0 1 5.3 5.2c1.55-.42 6.7-.42 6.7-.42s5.15 0 6.7.42a2.5 2.5 0 0 1 1.75 1.75C20.75 7.9 21 9.8 21 12Z"/><path d="m10 9 5 3-5 3V9Z" class="social-fill"/></svg></a>
+            <a href="https://www.tiktok.com/@marinhadobrasiloficial" target="_blank" rel="noopener noreferrer" aria-label="TikTok da Marinha do Brasil"><svg viewBox="0 0 24 24" aria-hidden="true" class="social-brand-fill"><path d="M15.6 3c.25 1.9 1.35 3.45 3.4 4.15v3.1a8.1 8.1 0 0 1-3.35-.78v5.42A6.1 6.1 0 1 1 10.4 8.8v3.18a2.95 2.95 0 1 0 2.08 2.82V3h3.12Z"/></svg></a>
+          </div>
+        </div>
+        <div class="footer-column">
+          <h2>Conheça</h2>
+          <a href="#recursos">Recursos</a>
+          <a href="#servicos">Serviços e Capitanias</a>
+          <a href="#qualidade-vida">Qualidade de vida</a>
+          <a href="#noticias">Notícias</a>
+          <a href="#cultura">Marinha Cultural</a>
+          <a href="#patrimonio">Patrimônio Naval</a>
+          <a href="#radio">Rádio Marinha</a>
+        </div>
+        <div class="footer-column">
+          <h2>Acesso</h2>
+          <a href="#download">Baixar o aplicativo</a>
+          <a href="suporte.html">Suporte e ajuda</a>
+          <a href="privacidade.html">Política de privacidade</a>
+          <a href="acessibilidade.html">Acessibilidade</a>
+          <a href="https://www.marinha.mil.br/" target="_blank" rel="noopener noreferrer">
+            Portal da Marinha
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
+          </a>
+          <a href="https://www.marinha.mil.br/ouvidoria" target="_blank" rel="noopener noreferrer">
+            Ouvidoria
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
+          </a>
+        </div>
+        <div class="footer-cta">
+          <span class="eyebrow">Disponível gratuitamente</span>
+          <h2>Leve a Marinha com você.</h2>
+          <a class="button button-gold" href="#download">
+            Baixar agora
+            <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-bottom shell">
+        <p>© 2026 Marinha do Brasil. Aplicativo oficial.</p>
+        <button type="button" data-back-to-top>Voltar ao topo <span aria-hidden="true">↑</span></button>
+      </div>
+    </footer>
+
+    <aside class="mobile-download" data-mobile-download hidden aria-label="Baixar o aplicativo">
+      <span><small>Aplicativo oficial e gratuito</small><strong data-mobile-store-label>Baixar agora</strong></span>
+      <a class="button button-primary" data-mobile-store-link href="#download">Baixar</a>
+      <button class="mobile-download-close" type="button" data-mobile-download-close aria-label="Fechar aviso de download">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg>
+      </button>
+    </aside>
+
+    <!-- Região viva para anúncios assistivos -->
+    <div id="a11y-live-feedback" class="sr-only" aria-live="polite"></div>
+
+    <!-- VLibras: Tradutor de Libras Oficial do Governo Federal -->
+    <div vw class="enabled">
+      <div vw-access-button class="active"></div>
+      <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+      </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+      new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+
+    <script src="js/site.js"></script>
+  </body>
+</html>
